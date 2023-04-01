@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .btn-primary {
+        @apply flex border-[1px] border-[#0099FA] rounded-full w-[150px] h-[42px] justify-center items-center
+    }
+    .cards {
+        @apply flex gap-x-[50px]
+    }
+    .card {
+        @apply flex flex-col font-medium w-[540px] h-[333px] justify-evenly bg-white rounded-md
+    }
+}

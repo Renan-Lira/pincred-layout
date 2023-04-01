@@ -33,10 +33,25 @@
     }
 
     .footer {
-        @apply flex bg-[#00447D] text-[#F5F5F5] p-[100px] mt-5 justify-between
+        @apply flex bg-[#00447D] text-[#FFFFFF] p-[100px] mt-5 justify-between
     }
 
     .col-footer {
         @apply flex top-1.5 flex-col gap-[15px]
+    }
+
+
+    /* modal-detalhamentos */
+
+    .zebra-faixa-forte {
+        @apply flex justify-between bg-[#D6EFFF] mb-1 px-5 py-1.5 text-[16px]
+    }
+
+    .zebra-faixa-fraca {
+        @apply flex justify-between bg-[#E5F5FF] mb-1 px-5 py-1.5 text-[16px]
+    }
+
+    .btn-modal-azul {
+        @apply flex bg-[#0099FA] text-[#FFFFFF] text-[14px] font-semibold rounded-full px-5 py-2.5 justify-center items-center
     }
 }

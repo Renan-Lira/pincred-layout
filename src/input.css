@@ -7,6 +7,16 @@
     .btn-primary {
         @apply flex border-[1px] border-[#0099FA] rounded-full w-[150px] h-[42px] justify-center items-center
     }
+    .btn-secundary {
+        @apply btn-primary h-min text-xs border-white text-white border-[2px] px-5 py-[7px] w-max
+    }
+
+    .btn-primary-selected {
+        @apply btn-primary bg-white text-[#0099FA] font-bold
+    }
+    .nav-selected-item {
+        @apply text-[#0099FA] font-bold
+    }
 
     .btn-primary-large-home {
         @apply flex border-[3px] border-[#0099FA] rounded-full w-[265px] h-[65px] justify-center items-center font-semibold text-[#0099FA] text-[20px]
@@ -38,5 +48,27 @@
 
     .col-footer {
         @apply flex top-1.5 flex-col gap-[15px]
+    }
+
+    .input-radio {
+        @apply flex gap-x-2 bg-white text-[#4D4D4D] [&>div>label]:text-[#0099FA] h-[100px] w-[400px] items-center px-[25px]
+    }
+    .input-radio input {
+        @apply w-[30px] h-[30px] appearance-none outline-2 rounded-full outline-[#0099FA] outline border-[3px] border-solid
+    }
+    .input-radio input:checked {
+        @apply bg-[#0099FA]
+    }
+
+    .card-form-simulation {
+        @apply flex flex-col p-8 bg-white text-black
+    }
+
+    .card-form-simulation input{
+        
+        @apply text-3xl mb-2 bg-transparent placeholder:text-[#4D4D4D] focus:outline-none
+    }
+    .card-form-simulation input::-webkit-inner-spin-button {
+        appearance: textfield;
     }
 }

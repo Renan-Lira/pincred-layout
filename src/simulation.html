@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#0099FA] text-white">
+    <header class="flex gap-x-[100px] px-[100px] pt-[80px] pb-[100px] items-center">
+        <h1 class="text-2xl"> <img src="../images/logo-pincred-white.svg" alt=""> </h1>
+        <nav class="">
+            <ul class="flex gap-x-[80px] [&>a]:flex [&>a]:flex-auto [&>a]:items-center">
+                <a class="" href="">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li>Produtos</li>
+                </a>
+                <a href="">
+                    <li>Informações</li>
+                </a>
+                <a href="">
+                    <li>Quem Somos</li>
+                </a>
+                <a href="">
+                    <li>Contato</li>
+                </a>
+                <a class="btn-primary-selected"href="">
+                    <li>Simulador</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex flex-col px-[100px] gap-5">
+        <h2 class="text-xl font-extrabold">NOVA SIMULAÇÃO</h3>
+
+        <section class="flex flex-col max-w-[39%] gap-y-3">
+
+            <div class="table-header flex gap-5">
+                <div class="flex text-center items-center">
+                    <img class="m-1" src="../images/ico-consignado-white.svg" alt="">
+                    <h3 class="text-2xl font-semibold" >Crédito Consignado</h3>
+                </div>
+                <div>
+                    <a class="btn-secundary" href="">Alterar Categoria</a>
+                </div>
+            </div>
+            <div>
+                <p>Empréstimo consignado em folha com as menores taxas do mercado e os melhores prazos para pagamento.</p>
+            </div>
+
+        </section>
+
+        <div class="flex flex-col gap-1 w-fit">
+
+            <div class="flex gap-1">
+                <div class="input-radio">
+                    <input name="tipoemprestimo" id="servidor" type="radio" value="servidor">
+                    <div>
+                        <label class="text-base" for="servidor">SERVIDOR FEDERAL</label>
+                        <p class="text-sm">Para servidores federais.</p>
+                    </div>
+                </div>
+                <div class="input-radio">
+                    <input name="tipoemprestimo" id="inss" type="radio" value="inss">
+                    <div>
+                        <label class="text-base" for="inss">INSS</label>
+                        <p class="text-sm">Para aposentados e pensionistas do INSS.</p>
+                    </div>
+                </div>
+                <div class="input-radio">
+                    <input name="tipoemprestimo" id="privado" type="radio" value="privado">
+                    <div>
+                        <label class="text-base" for="privado">CONSIGNADO PRIVADO</label>
+                        <p class="text-sm">Para funcionários do grupo PINTOS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-1">
+
+                <div class="flex flex-col gap-1 w-[50%]">
+                    <div class="card-form-simulation">
+                        <label class="mb-4" for="valor">VALOR</label>
+                        <div>
+                            <span>R$</span>
+                            <input class="" type="number" id="valor" value="valor" placeholder="0,00" step="0.10">
+                        </div>
+                        <p>Juros de 3.75% ao mês.</p>
+                    </div>
+    
+                    <div class="card-form-simulation">
+                        <label for="parcelas">PARCELAS</label>
+                        <input class="" type="number" id="parcelas" name="parcelas" placeholder="0">
+                    </div>
+    
+                    <div class="card-form-simulation">
+                        <div>
+                            <p>RESUMO DO EMPRÉSTIMO</p>
+                            <span>Ver Detalhes</span>
+                        </div>
+                        <div class="resultado">
+                            <span class="parcela">12x</span>
+                            <p>de</p>
+                            <span>R$ 1.184,93</span>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="row-start-2 row-end-5 col-start-3">
+    
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+</body>
+</html>

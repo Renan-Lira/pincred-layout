@@ -33,7 +33,7 @@
     }
 
     .footer {
-        @apply flex bg-[#00447D] text-[#F5F5F5]
+        @apply flex bg-[#00447D] text-[#F5F5F5] p-[100px] mt-5 justify-between
     }
 
     .col-footer {

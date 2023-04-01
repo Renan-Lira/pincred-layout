@@ -15,7 +15,7 @@
     <link href="../dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-[#F5F5F5]">
+<body class="bg-[#F5F5F5] texy-[]">
     <header class="flex gap-x-[100px] px-[100px] py-[80px] items-center">
         <h1 class="text-2xl"> <img src="../images/logo-pincred.svg" alt=""> </h1>
         <nav class="">
@@ -24,7 +24,10 @@
                     <li>Home</li>
                 </a>
                 <a href="">
-                    <li>Produtos</li>
+                    <li class="flex">
+                        <span class="mr-1">Produtos</span>
+                        <img src="../images/chevron-down.svg" alt="">
+                    </li>
                 </a>
                 <a href="">
                     <li>Informações</li>
@@ -119,18 +122,70 @@
 
     </section>
 
-    <footer class="footer">
-        <div class="col-footer">
-            <div class="flex justify-end font-semibold ">
-                <img src="../images/ico-map-tree.svg" alt="">
-                <h6>MAPA DO SITE</h6>
+    <footer class="footer ">
+        <div class="flex justify-between w-3/5">
+            <div class="col-footer">
+                <div class="flex items-start justify-start font-semibold pb-2">
+                    <img class="mr-1" src="../images/ico-map-tree.svg" alt="">
+                    <h6>MAPA DO SITE</h6>
+                </div>
+                <ul>
+                    <li class="py-1.5"><a href="">Home</a></li>
+                    <li class="py-1.5"><a href="">Produtos</a></li>
+                    <li class="py-1.5"><a href="">Informações</a></li>
+                    <li class="py-1.5"><a href="">Quem Somos</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">Informações</a></li>
-                <li><a href="">Quem Somos</a></li>
-            </ul>
+
+            <div class="col-footer">
+                <div class="flex items-start justify-start font-semibold pb-2">
+                    <img class="mr-1" src="../images/ico-bull-horn.svg" alt="">
+                    <h6>ATENDIMENTO</h6>
+                </div>
+                <ul>
+                    <li class="py-1.5">atendimento@pincred.com.br</li>
+                    <li class="py-1.5">SAC: (86) 2107.4004</li>
+                    <li class="py-1.5">Ouvidoria: 0800.0861486</li>
+                    <li class="py-1.5">
+                        <a class="flex" href="">
+                            <span class="mr-1 underline decoration-1">Canal de Denúncias</span>
+                            <img class="mr-1" src="../images/ico-open-external.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-footer">
+                <div class="flex items-start justify-start font-semibold pb-2">
+                    <img class="mr-1" src="../images/ico-book-mark.svg" alt="">
+                    <h6>JURÍDICO</h6>
+                </div>
+                <ul>
+                    <li class="py-1.5">
+                        <a class="flex" href="">
+                            <span class="mr-1 underline decoration-1">Termo de Uso</span>
+                            <img class="mr-1" src="../images/ico-open-external.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="py-1.5">
+                        <a class="flex" href="">
+                            <span class="mr-1 underline decoration-1">Política de Privacidade</span>
+                            <img class="mr-1" src="../images/ico-open-external.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contatos">
+            <div class="col-footer text-end">
+                <div class="flex items-start justify-end font-semibold pb-2">
+                    <img class="mr-1" src="../images/pincred-white.svg" alt="">
+                </div>
+                <ul>
+                    <li class=" py-1.5">PINTOS S. A. - Crédito Financiamento e Investimento</li>
+                    <li class=" py-1.5">Rua 13 de Maio, 154 - Centro - 64000-150 Teresina, PI</li>
+                </ul>
+            </div>
         </div>
 
     </footer>

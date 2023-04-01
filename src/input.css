@@ -7,10 +7,36 @@
     .btn-primary {
         @apply flex border-[1px] border-[#0099FA] rounded-full w-[150px] h-[42px] justify-center items-center
     }
+
+    .btn-primary-large-home {
+        @apply flex border-[3px] border-[#0099FA] rounded-full w-[265px] h-[65px] justify-center items-center font-semibold text-[#0099FA] text-[20px]
+    }
+
     .cards {
         @apply flex gap-x-[50px]
     }
+
     .card {
-        @apply flex flex-col font-medium w-[540px] h-[333px] justify-evenly bg-white rounded-md
+        @apply flex flex-col font-medium w-[540px] h-[333px] justify-evenly bg-white rounded-md p-10
+    }
+
+    .card-title {
+        @apply flex justify-between items-end font-bold text-[#0099FA] text-[26px]
+    }
+
+    .card-footer {
+        @apply flex justify-end
+    }
+
+    .card-btn {
+        @apply flex bg-[#0099FA] text-[#F5F5F5] rounded-full w-[150px] h-[42px] justify-center items-center
+    }
+
+    .footer {
+        @apply flex bg-[#00447D] text-[#F5F5F5]
+    }
+
+    .col-footer {
+        @apply flex top-1.5 flex-col gap-[15px]
     }
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <title>Pincred</title>
+
+    <link href="../dist/output.css" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"/>
+</head>
+
+<body class="bg-[#00000054] flex items-center justify-center h-screen">
+    <div class="card-num-proposta flex flex-col gap-5 max-w-md bg-white rounded-xl py-6">
+        <header class="header flex justify-between px-5">
+            <h2 class="text-[#0099FA] font-bold text-lg">Proposta Recebida</h2>
+            <span><i class="ph ph-x text-base"></i></span>
+        </header>
+
+        <section class="flex flex-col gap-3">
+            <p class="pl-5 pr-7">Parabéns! Sua proposta foi recebida com sucesso:</p>
+            <article class="bg-[#DBF1FF] flex flex-col justify-center items-center py-5 gap-3">
+                <p class="text-[#0099FA] font-semibold">Nº PROPOSTA</p>
+                <div class="num-proposta">
+                    <span class="text-5xl font-extrabold text-[#4D4D4D] tracking-[0.3em]">35572</span>
+                </div>
+            </article>
+        </section>
+
+        <footer class="flex flex-col gap-8 px-5">
+            <p class="text-[#0099FA]"><i class="ph-fill ph-info"></i> Solicitaremos este número quando se dirigir a um de nossos correspondentes.</p>
+            <button class="btn-primary-blue self-end">OK, ENTENDI</button>
+        </footer>
+
+    </div>
+</body>

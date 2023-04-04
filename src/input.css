@@ -172,13 +172,6 @@
     .table-zebra li:nth-child(even) {
         @apply bg-[#E5F5FF]
     }
-    /* .zebra-faixa-forte {
-        @apply flex justify-between bg-[#D6EFFF] mb-1 px-5 py-1.5 text-[16px]
-    }
-
-    .zebra-faixa-fraca {
-        @apply flex justify-between bg-[#E5F5FF] mb-1 px-5 py-1.5 text-[16px]
-    } */
 
     .btn-modal-azul {
         @apply flex bg-[#0099FA] text-[#FFFFFF] text-[14px] font-semibold rounded-full px-5 py-2.5 justify-center items-center

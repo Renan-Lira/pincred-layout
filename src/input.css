@@ -183,4 +183,29 @@
     .btn-modal-azul {
         @apply flex bg-[#0099FA] text-[#FFFFFF] text-[14px] font-semibold rounded-full px-5 py-2.5 justify-center items-center
     }
+
+    /* autorizacao */
+    .check-termos {
+        @apply flex gap-2 items-center
+    }
+
+    .check-termos input[type="checkbox"] {
+        @apply appearance-none bg-white w-6 h-6 border-[1px] m-0 border-[#0099FA] rounded-[5px] flex items-center justify-center;
+
+    }
+
+    .check-termos input[type="checkbox"]::before {
+        content: "";
+        @apply w-3 h-3 bg-[#0099FA] rounded;
+
+        transition: 120ms transform ease-in-out;
+        transform: scale(0);
+      }
+      
+      .check-termos input[type="checkbox"]:checked::before {
+        transform: scale(1);
+      }
+
+
+
 }

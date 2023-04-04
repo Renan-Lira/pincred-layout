@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguir Proposta Online</title>
+
+
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css"
+    />
+
+</head>
+<body class="bg-[#F5F5F5] text-black">
+    <header class="flex gap-x-[100px] px-[100px] pt-[80px] pb-[100px] items-center">
+        <h1 class="text-2xl"> <img src="../images/logo-pincred.svg" alt=""> </h1>
+        <nav class="">
+            <ul class="flex gap-x-[80px] [&>a]:flex [&>a]:flex-auto [&>a]:items-center">
+                <a class="" href="">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li>Produtos</li>
+                </a>
+                <a href="">
+                    <li>Informações</li>
+                </a>
+                <a href="">
+                    <li>Quem Somos</li>
+                </a>
+                <a href="">
+                    <li>Contato</li>
+                </a>
+                <a class="btn-primary-blue"href="">
+                    <li>Simulador</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flex pl-[100px] pr-[150px] items-start text-[#0099FA]">
+
+        <main class="flex flex-col gap-5 w-[80%]">
+            <h2 class="text-xl font-extrabold">SEGUIR PROPOSTA ONLINE</h2>
+    
+            <section class="flex flex-col max-w-[50%] gap-y-3">
+    
+                <div class="table-header flex gap-5">
+                    <div class="flex text-center items-center">
+                        <img class="m-1" src="../images/ico-consignado-blue.svg" alt="">
+                        <h3 class="text-2xl font-semibold" >Crédito Consignado</h3>
+                    </div>
+                    <div>
+                        <a class="btn-primary" href="">Alterar Categoria</a>
+                    </div>
+                </div>
+                <div>
+                    <i class="ph-fill ph-pencil-simple"></i> CRÉDITO CONSIGNADO · 12X DE R$ 1.184,93 · INSS
+                </div>
+    
+            </section>
+
+            <form action="" class="flex w-[86%] gap-1 items-start">
+                <div class="form1">
+                    <h4 class="text-[#4D4D4D] text-base">Por favor, nos informe seus dados básicos de cadastro abaixo:</h4>
+                    <div class="grid grid-cols-2 gap-[30px]">
+                        <div class="input-proposta col-span-2">
+                            <label for="nomecompleto">NOME COMPLETO*</label>
+                            <input type="text" id="nomecompleto" placeholder="Nome Completo">
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                        <div  class="input-proposta">
+                            <label for="cpf">CPF*</label>
+                            <input type="text" id="cpf" placeholder="000.000.000-00">
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                        <div class="input-proposta">
+                            <label for="telefone">TELEFONE</label>
+                            <input type="text" id="telefone" placeholder="(000) 00000 0000">
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                        <div class="input-proposta">
+                            <label for="email">EMAIL</label>
+                            <input type="text" id="email" placeholder="usuario@exemplo.com.br">
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                        <div class="input-proposta">
+                            <label for="nmatricula">Nº MATRÍCULA</label>
+                            <input type="text" id="nmatricula" placeholder="0000-00">
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+                <div class="form2 flex flex-col w-[50%] gap-5">
+                    <div class="flex flex-col px-8 py-10 w-[100%] bg-white gap-[25px]">
+
+                        <h4 class="text-[#4D4D4D] font-medium text-base">Envio de documentos e anexos:</h4>
+    
+                        <div class="input-label-files">
+                            <label for="docidentificacao"><i class="ph-fill ph-camera"></i> DOCUMENTO ORIGINAL DE IDENTIFICAÇÃO COM FOTO*</label>
+                            <div class="file-selector">
+                                <input type="file" accept="image/*;capture=camera" id="docidentificacao" capture>
+                                <button class="btn-camera">ABRIR CAMERA</button>
+                                <button class="btn-arquivo">SELECIONAR IMAGEM</button>
+                            </div>
+                        </div>
+    
+                        <div class="input-label-files">
+                            <label for="pessoafisica"><i class="ph-fill ph-identification-card"></i> CADASTRO DE PESSOA FÍSICA*</label>
+                            <div class="file-selector">
+                                <input type="file" accept="image/*;capture=camera" id="pessoafisica" capture>
+                                <button class="btn-camera">ABRIR CAMERA</button>
+                                <button class="btn-arquivo">SELECIONAR IMAGEM</button>
+                            </div>
+                        </div>
+    
+                        <div class="input-label-files">
+                            <label for="comprovanterenda"><i class="ph-fill ph-money"></i> COMPROVANTE DE RENDA*</label>
+                            <div class="file-selector">
+                                <input type="file" accept="image/*;capture=camera" id="comprovanterenda" capture>
+                                <button class="btn-camera">ABRIR CAMERA</button>
+                                <button class="btn-arquivo">SELECIONAR IMAGEM</button>
+                            </div>
+                        </div>
+    
+                        <div class="input-label-files">
+                            <label for="comprovanteendereco"><i class="ph-fill ph-house-line"></i> COMPROVANTE DE ENDEREÇO*</label>
+                            <div class="file-selector">
+                                <input type="file" accept="image/*;capture=camera" id="comprovantendereco" capture>
+                                <button class="btn-camera">ABRIR CAMERA</button>
+                                <button class="btn-arquivo">SELECIONAR IMAGEM</button>
+                            </div>
+                        </div>
+                        <span>*Arquivo com tamanho máximo de 5 MBs.</span>
+                    </div>
+
+                    <button class="bg-[#0099FA] rounded-full py-4 text-white">CONTINUAR</button>
+                </div>
+            </form>
+
+        </main>
+            <div>
+                <img src="../images/img-smile-01-blue.svg" alt="">
+            </div>
+    </div>
+
+
+
+</body>
+</html>

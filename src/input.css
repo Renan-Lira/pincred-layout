@@ -5,15 +5,22 @@
 
 @layer components {
     .btn-primary {
-        @apply flex border-[1px] border-[#0099FA] rounded-full w-[150px] h-[42px] justify-center items-center
+        @apply flex border-[2px] border-[#0099FA] rounded-full w-fit h-[42px] px-5 py-2 justify-center items-center
     }
     .btn-secundary {
         @apply btn-primary h-min text-xs border-white text-white border-[2px] px-5 py-[7px] w-max
     }
+    /* .btn-secundary-blue {
+        @apply btn-se
+    } */
 
     .btn-primary-selected {
         @apply btn-primary bg-white text-[#0099FA] font-bold
     }
+    .btn-primary-blue {
+        @apply btn-primary bg-[#0099FA] text-white font-bold
+    }
+
     .nav-selected-item {
         @apply text-[#0099FA] font-bold
     }
@@ -43,15 +50,42 @@
     }
 
     .footer {
-        @apply flex bg-[#00447D] text-[#F5F5F5]
+        @apply flex bg-[#00447D] text-[#FFFFFF] p-[100px] justify-between
     }
 
     .col-footer {
         @apply flex top-1.5 flex-col gap-[15px]
     }
 
+    /* modal simulation */
+
+    .table-template {
+        display: grid;
+        grid-template: 'a a a a'
+                       'b b c c' 
+                       'd d c c' 
+                       'e e c c'
+                       /1fr 1fr 1fr 1fr ;
+        
+    }
+    .area-grid-a {
+        grid-area: a;
+    }
+    .area-grid-b {
+        grid-area: b;
+    }
+    .area-grid-c {
+        grid-area: c;
+    }
+    .area-grid-d {
+        grid-area: d;
+    }
+    .area-grid-e {
+        grid-area: e;
+    }
+
     .input-radio {
-        @apply flex gap-x-2 bg-white text-[#4D4D4D] [&>div>label]:text-[#0099FA] h-[100px] w-[400px] items-center px-[25px]
+        @apply flex gap-x-2 bg-white text-[#4D4D4D] [&>div>label]:text-[#0099FA] h-[100px] w-1/3 items-center px-[25px] rounded
     }
     .input-radio input {
         @apply w-[30px] h-[30px] appearance-none outline-2 rounded-full outline-[#0099FA] outline border-[3px] border-solid
@@ -64,11 +98,89 @@
         @apply flex flex-col p-8 bg-white text-black
     }
 
+    .card-form-simulation label {
+        @apply text-lg font-semibold
+    }
+
     .card-form-simulation input{
         
-        @apply text-3xl mb-2 bg-transparent placeholder:text-[#4D4D4D] focus:outline-none
+        @apply text-3xl bg-transparent placeholder:text-[#4D4D4D] focus:outline-none
     }
-    .card-form-simulation input::-webkit-inner-spin-button {
-        appearance: textfield;
+
+    .links-table-simulation {
+        @apply bg-[#E5F5FF] rounded flex px-[30px] pt-6 pb-8 h-[100%] items-center justify-between
+    }
+    .links-table-simulation .content {
+        @apply flex flex-col gap-3
+    }
+
+    .links-table-simulation .content h4 {
+        @apply text-[#0099FA] text-xl font-bold
+    }
+
+    .links-table-simulation .content p {
+        @apply text-[#4D4D4D] text-base
+    }
+
+    .links-table-simulation span {
+        @apply text-[#0099FA] text-3xl font-bold flex items-center
+    }
+
+    /* modal-proposta forms */
+
+    .form1 {
+
+        @apply flex flex-col bg-white gap-[30px] w-[50%] px-8 py-10
+    }
+    .input-proposta {
+        @apply flex flex-col gap-2
+    }
+    .input-proposta label {
+        @apply text-[#0099FA] text-xs font-semibold
+    }
+    .input-proposta input {
+        @apply pb-[15px] border-b-[0.5px] border-[#4D4D4D] focus:outline-none text-[#4D4D4D] font-semibold text-base
+    }
+    .input-proposta span {
+        @apply text-[#0099FA] font-semibold text-xs
+    }
+
+
+    .file-selector {
+        @apply flex pb-[15px] text-[10px] border-b-[0.5px] border-[#4D4D4D] w-full whitespace-nowrap items-center
+    }
+    .file-selector .btn-arquivo {
+        @apply bg-[#0099FA] ml-[15px] rounded-full px-4 py-2 text-white
+    }
+    .input-label-files label {
+        @apply text-[#0099FA] text-xs font-semibold
+    }
+    input[type="file"] {
+        @apply text-[#4d4d4d48] text-sm
+    }
+    input[type="file"]::file-selector-button {
+        display: none;
+    }
+
+
+
+    /* modal-detalhamentos */
+
+    .table-zebra li {
+        @apply flex justify-between bg-[#D6EFFF] mb-1 px-5 py-1.5 text-[16px]
+    }
+    .table-zebra li:nth-child(even) {
+        @apply bg-[#E5F5FF]
+    }
+    /* .zebra-faixa-forte {
+        @apply flex justify-between bg-[#D6EFFF] mb-1 px-5 py-1.5 text-[16px]
+    }
+
+    .zebra-faixa-fraca {
+        @apply flex justify-between bg-[#E5F5FF] mb-1 px-5 py-1.5 text-[16px]
+    } */
+
+    .btn-modal-azul {
+        @apply flex bg-[#0099FA] text-[#FFFFFF] text-[14px] font-semibold rounded-full px-5 py-2.5 justify-center items-center
     }
 }

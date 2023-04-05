@@ -1,0 +1,15 @@
+
+@layer components {
+
+    .menu {
+        display: none;
+        @apply absolute origin-top-right right-0 top-9 rounded-md shadow-md p-5 z-10 bg-white focus:outline-none;
+        @apply menu-tablet;
+    }
+    .menu-tablet {
+        @apply md:flex md:bg-transparent md:static md:shadow-none;
+    }
+    .menu-visible {
+        display: block !important;
+    }
+}

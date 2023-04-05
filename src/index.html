@@ -13,61 +13,77 @@
     <title>Pincred</title>
 
     <link href="../dist/output.css" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css"/>
+
 </head>
 
-<body class="bg-[#F5F5F5]">
-    <header class="flex gap-x-[100px] px-[100px] py-[80px] items-center">
-        <h1 class="text-2xl"> <img src="../images/logo-pincred.svg" alt=""> </h1>
-        <nav class="">
-            <ul class="flex gap-x-[80px] [&>a]:flex [&>a]:flex-auto [&>a]:items-center">
-                <a class="nav-selected-item" href="">
-                    <li>Home</li>
-                </a>
-                <a href="">
-                    <li class="flex">
-                        <span class="mr-1">Produtos</span>
-                        <img src="../images/chevron-down.svg" alt="">
-                    </li>
-                </a>
-                <a href="">
-                    <li>Informações</li>
-                </a>
-                <a href="">
-                    <li>Quem Somos</li>
-                </a>
-                <a href="">
-                    <li>Contato</li>
-                </a>
-                <a class="btn-primary" href="">
-                    <li>Simulador</li>
-                </a>
-            </ul>
-        </nav>
+<body class="bg-[#F5F5F5] flex flex-col w-screen">
+    <header class="flex md:flex-col lg:flex-row gap-x-[100px] md:px-24 lg:px-8 py-[80px] items-center justify-center lg:justify-start w-full">
+        <img class="w-24" src="../images/logo-pincred.svg" alt="">
+
+        <div class="relative flex flex-col">
+            <div>
+                <button class="text-4xl md:hidden" onclick=clickButtonMenu()>
+                    <i class="ph-fill ph-list"></i>
+                </button>
+            </div>
+          
+            <div id="menu-list" class="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <nav class="p-1">
+                    <ul class="grid gap-3 md:flex md:gap-5 md:items-center md:text-sm whitespace-nowrap xl:gap-[80px]">
+                        <a class="nav-selected-item" href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="">
+                            <li class="flex">
+                                <span class="mr-1">Produtos</span>
+                                <i class="ph-fill ph-caret-down"></i>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>Informações</li>
+                        </a>
+                        <a href="">
+                            <li>Quem Somos</li>
+                        </a>
+                        <a href="">
+                            <li>Contato</li>
+                        </a>
+                        <a class="btn-primary" href="">
+                            <li>Simulador</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+          </div>
     </header>
-    <main class="grid grid-cols-[580px_1fr] px-[100px] justify-center mb-[55px]">
-        <article class="flex flex-col justify-center gap-[22px]">
-            <div class="title flex flex-col gap-[15px] w-[90%]">
-                <h4 class="text-[36px]">Tem um sonho?</h4>
-                <h3 class="text-[36px] bg-[#0099FA] text-white p-1 font-semibold w-fit px-[18px]">Ajudamos a conquistá-lo!</h3>
+
+    <main class="grid grid-rows-[1fr_1fr] lg:grid-cols-[minmax(300px,_480px)_1fr] lg:grid-rows-none lg:items-center md:px-24 lg:px-8 px-2 md:justify-center mb-[55px]">
+        <article class="flex flex-col md:justify-start items-center lg:items-start lg:justify-center gap-[22px] h-fit mb-8">
+            <div class="title flex flex-col md:items-start gap-[15px]">
+                <h4 class="text-4xl lg:max-xl:text-4xl whitespace-nowrap">Tem um sonho?</h4>
+                <h3 class="text-4xl lg:max-xl:text-4xl bg-[#0099FA] text-white p-1 font-semibold w-fit px-[18px]">Ajudamos a conquistá-lo!</h3>
 
             </div>
-            <div class="flex flex-col gap-[15px]">
-                <p class="whitespace-pre-wrap text-[24px]">Crédito fácil, rápido e com as melhores taxas do mercado nacional.</p>
+            <div class="flex flex-col gap-[15px] text-center items-center lg:items-start lg:text-left">
+                <p class="whitespace-pre-wrap text-2xl lg:max-xl:text-lg">Crédito fácil, rápido e com as melhores taxas do mercado nacional.</p>
                 <a class="btn-primary-large-home">Saiba Mais</a>
             </div>
 
         </article>
 
-        <article class="flex gap-[83px] justify-end items-end">
-            <img class="h-fit" src="../images/pincred-mockup-clay/pincred-mockup-clay.png" alt="">
-            <img src="../images/img-smile-01-blue.svg" alt="">
+        <article class="flex md:gap-[83px] justify-center items-end 2xl:justify-end 2xl:items-end">
+            <img class="w-[70%] md:w-[30%] 2xl:h-fit" src="../images/pincred-mockup-clay/pincred-mockup-clay.png" alt="">
+            <img class="w-[30%] md:h-[20%] 2xl:h-fit" src="../images/img-smile-01-blue.svg" alt="">
         </article>
     </main>
 
-    <section class="flex flex-col px-[100px] py-[100px] bg-[#0099FA]">
-        <div class="flex flex-col gap-[25px] w-[50%] mb-[60px] text-white">
-            <h4 class=" font-semibold text-[32px]">Quer simular um empréstimo, ou até mesmo verificar sua disponibilidade contratual?</h4>
-            <p class="text-2xl">Inicie uma nova simulação em nosso Simulador Online Pincred e tenha o resultado de suas dúvidas imediatamente.</p>
+    <section class="flex flex-col px-2 md:px-24 lg:px-8 py-[100px] bg-[#0099FA]">
+        <div class="flex flex-col gap-[25px] mb-[60px] text-white">
+            <h4 class="font-semibold text-lg md:text-3xl">Quer simular um empréstimo, ou até mesmo verificar sua disponibilidade contratual?</h4>
+            <p class="text-base md:text-2xl">Inicie uma nova simulação em nosso Simulador Online Pincred e tenha o resultado de suas dúvidas imediatamente.</p>
         </div>
 
         <div class="cards">
@@ -123,13 +139,13 @@
     </section>
 
     <footer class="footer ">
-        <div class="flex justify-between w-3/5">
+        <div class="flex flex-col gap-4 lg:gap-12 2xl:gap-44 md:flex-row">
             <div class="col-footer">
-                <div class="flex items-start justify-start font-semibold pb-2">
+                <div class="flex items-center justify-center font-semibold">
                     <img class="mr-1" src="../images/ico-map-tree.svg" alt="">
                     <h6>MAPA DO SITE</h6>
                 </div>
-                <ul>
+                <ul class="text-center lg:text-left">
                     <li class="py-1.5"><a href="">Home</a></li>
                     <li class="py-1.5"><a href="">Produtos</a></li>
                     <li class="py-1.5"><a href="">Informações</a></li>
@@ -138,16 +154,16 @@
             </div>
 
             <div class="col-footer">
-                <div class="flex items-start justify-start font-semibold pb-2">
+                <div class="flex items-center justify-center font-semibold">
                     <img class="mr-1" src="../images/ico-bull-horn.svg" alt="">
                     <h6>ATENDIMENTO</h6>
                 </div>
-                <ul>
+                <ul class="text-center lg:text-left">
                     <li class="py-1.5">atendimento@pincred.com.br</li>
                     <li class="py-1.5">SAC: (86) 2107.4004</li>
                     <li class="py-1.5">Ouvidoria: 0800.0861486</li>
                     <li class="py-1.5">
-                        <a class="flex" href="">
+                        <a class="flex items-center justify-center lg:justify-start" href="">
                             <span class="mr-1 underline decoration-1">Canal de Denúncias</span>
                             <img class="mr-1" src="../images/ico-open-external.svg" alt="">
                         </a>
@@ -156,19 +172,19 @@
             </div>
 
             <div class="col-footer">
-                <div class="flex items-start justify-start font-semibold pb-2">
+                <div class="flex items-center justify-center font-semibold">
                     <img class="mr-1" src="../images/ico-book-mark.svg" alt="">
                     <h6>JURÍDICO</h6>
                 </div>
-                <ul>
+                <ul class="text-center lg:text-left">
                     <li class="py-1.5">
-                        <a class="flex" href="">
+                        <a class="flex items-center justify-center lg:justify-start" href="">
                             <span class="mr-1 underline decoration-1">Termo de Uso</span>
                             <img class="mr-1" src="../images/ico-open-external.svg" alt="">
                         </a>
                     </li>
                     <li class="py-1.5">
-                        <a class="flex" href="">
+                        <a class="flex items-center justify-center lg:justify-start" href="">
                             <span class="mr-1 underline decoration-1">Política de Privacidade</span>
                             <img class="mr-1" src="../images/ico-open-external.svg" alt="">
                         </a>
@@ -177,8 +193,8 @@
             </div>
         </div>
         <div class="contatos">
-            <div class="col-footer text-end">
-                <div class="flex items-start justify-end font-semibold pb-2">
+            <div class="col-footer lg:items-end text-center lg:text-right">
+                <div class="flex items-start justify-center lg:justify-end font-semibold">
                     <img class="mr-1" src="../images/pincred-white.svg" alt="">
                 </div>
                 <ul>
@@ -190,6 +206,7 @@
 
     </footer>
 
+    <script src="./js/menu-dropdown.js"></script>
 </body>
 
 </html>

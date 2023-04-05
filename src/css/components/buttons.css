@@ -1,0 +1,23 @@
+
+@layer components {
+    .btn-primary{
+        @apply flex border-[2px] border-[#0099FA] rounded-full w-fit h-[42px] px-5 py-2 justify-center items-center;
+    }
+
+    .btn-secundary {
+        @apply btn-primary h-min text-xs border-white text-white border-[2px] px-5 py-[7px] w-max
+    }
+
+    .btn-primary-selected {
+        @apply btn-primary bg-white text-[#0099FA] font-bold
+    }
+
+    .btn-primary-blue {
+        @apply btn-primary bg-[#0099FA] text-white font-bold
+    }
+    
+    .btn-primary-large-home {
+        @apply flex border-[3px] border-[#0099FA] rounded-full w-[265px] h-[65px] justify-center items-center font-semibold text-[#0099FA] text-[20px]
+    }
+
+}

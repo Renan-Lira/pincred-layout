@@ -7,3 +7,5 @@
 @import './responsive/main-responsive.css';
 @import './responsive/sections-cards-responsive.css';
 @import './responsive/footer-responsive.css';
+@import './responsive/simulation-page/main-responsive.css';
+@import './responsive/simulation-page/simulacao-grid-inputs.css';

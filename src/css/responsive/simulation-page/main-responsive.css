@@ -1,0 +1,37 @@
+@layer components {
+    .body-page-main-continer-with-smilepng {
+        @apply flex justify-between px-2 lg:pl-[100px] lg:pr-[150px] lg:gap-20 mb-6 items-start;
+    }
+
+    .simulacao-main-responsive {
+        @apply flex flex-col gap-5 w-full;
+    }
+
+    .simulacao-table-template-larger-screens {
+        display: grid;
+        grid-template: 'a a a a'
+                       'b b c c' 
+                       'd d c c' 
+                       'e e c c'
+                       /1fr 1fr 1fr 1fr ;
+        
+    }
+    .area-grid-a {
+        grid-area: a;
+    }
+    .area-grid-b {
+        grid-area: b;
+    }
+    .area-grid-c {
+        grid-area: c;
+    }
+    .area-grid-d {
+        grid-area: d;
+        @apply gap-4;
+    }
+    .area-grid-e {
+        grid-area: e;
+        @apply gap-5;
+    }
+
+}

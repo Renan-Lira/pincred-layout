@@ -1,0 +1,93 @@
+@layer components {
+    .simulacao-grid-area-input-radio-responsive {
+        @apply flex flex-col md:flex-row gap-1 lg:area-grid-a;
+    }
+
+    .input-radio-responsive {
+        @apply flex gap-x-2 bg-white md:flex-1 text-[#4D4D4D] [&>div>label]:text-[#0099FA] h-[100px] lg:w-1/3 items-center px-3 lg:px-[25px] rounded
+    }
+    .input-radio-responsive input {
+        @apply w-[30px] h-[30px] appearance-none outline-2 rounded-full outline-[#0099FA] outline border-[3px] border-solid
+    }
+    .input-radio-responsive input:checked {
+        @apply bg-[#0099FA]
+    }
+
+    .card-links-form-simulacao {
+        @apply bg-white flex flex-col px-[30px] py-8 gap-[10px] justify-center;
+    }
+
+    /* para uso de javascript */
+    .card-links-form-simulacao-active {
+        @apply bg-white text-[#0099FA];
+    }
+    .card-links-form-simulacao-disabled {
+        @apply bg-[#E1E1E1] text-[#8A8A8A];
+    } 
+
+    .card-form-simulation-disabled {
+        @apply text-[#A2A2A2] bg-[#E1E1E1]
+    }
+    .card-form-simulation-disabled button {
+        @apply bg-[#E8E8E8] text-[#00000054]
+    }
+    .card-form-simulation-active button {
+        @apply bg-[#0099FA] text-white;
+    }
+    .card-form-simulation-disabled span {
+        @apply text-[#A2A2A2];
+    }
+    .card-form-simulation-active span {
+        @apply text-[#0099FA];
+    }
+    .card-form-simulation-active {
+        @apply bg-white text-black;
+    }
+    /* fim para uso de javascript */
+
+    .card-form-simulation {
+        @apply flex flex-col p-8 gap-2 placeholder:text-[#4D4D4D];
+    }
+    .card-form-simulation button {
+        @apply rounded-full w-[135px] h-[42px] font-semibold text-sm;
+    }
+    .card-form-simulation label {
+        @apply text-lg font-semibold;
+    }
+
+    .card-form-simulation input{
+        
+        @apply text-2xl lg:text-3xl bg-transparent focus:outline-none
+    }
+    
+    .card-form-simulation-total-value {
+        @apply flex items-center gap-2;
+    }
+    .card-form-simulation-total-value span {
+        @apply font-extrabold text-2xl;
+    }
+
+    
+
+    .links-table-simulation {
+        @apply bg-[#E5F5FF] rounded flex px-[30px] pt-6 pb-8 h-[100%] items-center justify-between
+    }
+    .links-table-simulation span {
+        @apply text-3xl font-bold hidden md:flex items-center
+    }
+
+    .links-table-simulation-content {
+        @apply flex flex-col gap-3
+    }
+
+    .links-table-simulation-content h4 {
+        @apply text-xl font-bold
+    }
+
+    .links-table-simulation-content p {
+        @apply text-[#4D4D4D] text-base
+    }
+
+
+
+}

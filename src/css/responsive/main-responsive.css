@@ -1,0 +1,19 @@
+
+
+@layer components {
+    .main-content-responsive {
+        @apply grid grid-rows-[1fr_1fr] lg:grid-cols-[minmax(40%,_430px)_1fr] lg:grid-rows-none lg:items-center md:px-24 px-2 md:justify-center mb-[55px]; 
+    }
+
+    .main-article-text-responsive {
+        @apply flex flex-col md:justify-start items-center lg:items-start lg:justify-center gap-[22px] h-fit mb-8;
+    }
+
+    .main-article-text-divs-responsive {
+        @apply flex flex-col items-center text-center lg:items-start lg:text-left gap-[15px];
+    }
+
+    .main-article-imgs-responsive {
+        @apply flex md:gap-14 justify-center items-end 2xl:justify-end 2xl:items-end;
+    }
+}

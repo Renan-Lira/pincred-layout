@@ -1,2 +1,9 @@
 @import './components/buttons.css';
 @import './components/menu.css';
+@import './components/cards.css';
+
+@import './responsive/headers-responsive.css';
+@import './responsive/header-menu.css';
+@import './responsive/main-responsive.css';
+@import './responsive/sections-cards-responsive.css';
+@import './responsive/footer-responsive.css';

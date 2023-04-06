@@ -1,0 +1,19 @@
+
+
+@layer components {
+    .section-card-responsive {
+        @apply flex flex-col px-2 md:px-24 py-[100px] bg-[#0099FA];
+    }
+
+    .section-card-title-responsive {
+        @apply flex flex-col gap-[25px] mb-[60px] text-white;
+    }
+
+    .section-card-title-responsive h4 {
+        @apply font-semibold text-lg md:text-3xl;
+    }
+
+    .section-card-title-responsive p {
+        @apply text-base md:text-2xl;
+    }
+}

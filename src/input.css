@@ -4,43 +4,8 @@
 @import "./css/components.css";
 
 @layer components {
-    .nav-selected-item {
-        @apply text-[#0099FA] font-bold
-    }
+    
 
-
-    .cards {
-        @apply flex flex-col lg:flex-row lg:flex-wrap justify-between lg:justify-center gap-3
-    }
-
-    .card {
-        @apply flex flex-col font-medium w-full lg:w-1/3 h-[333px] justify-between bg-white rounded-md p-10
-    }
-
-    .card-title {
-        @apply flex justify-between items-end font-bold text-[#0099FA] text-xl [&>img]:w-7
-    }
-    .card-body {
-        @apply text-sm
-    }
-    .card-footer {
-        @apply flex justify-end
-    }
-
-    .card-btn {
-        @apply flex bg-[#0099FA] text-[#F5F5F5] rounded-full w-[150px] h-[42px] justify-center items-center
-    }
-
-    .footer {
-        @apply flex flex-col lg:flex-row bg-[#00447D] text-[#FFFFFF] p-2 py-5 md:p-24 lg:px-8 justify-between text-sm
-    }
-
-    .col-footer {
-        @apply flex flex-col gap-1 items-center lg:items-start w-full
-    }
-    .contatos {
-        @apply mt-3 lg:mt-0
-    }
     /* modal simulation */
 
     .table-template {
@@ -69,7 +34,7 @@
     }
 
     .input-radio {
-        @apply flex gap-x-2 bg-white text-[#4D4D4D] [&>div>label]:text-[#0099FA] h-[100px] w-1/3 items-center px-[25px] rounded
+        @apply flex gap-x-2 bg-white md:flex-1 text-[#4D4D4D] [&>div>label]:text-[#0099FA] h-[100px] lg:w-1/3 items-center px-3 lg:px-[25px] rounded
     }
     .input-radio input {
         @apply w-[30px] h-[30px] appearance-none outline-2 rounded-full outline-[#0099FA] outline border-[3px] border-solid
@@ -79,7 +44,7 @@
     }
 
     .card-form-simulation {
-        @apply flex flex-col p-8 bg-white text-black
+        @apply flex flex-col p-8 bg-white text-black gap-2
     }
 
     .card-form-simulation label {
@@ -88,7 +53,7 @@
 
     .card-form-simulation input{
         
-        @apply text-3xl bg-transparent placeholder:text-[#4D4D4D] focus:outline-none
+        @apply text-2xl lg:text-3xl bg-transparent placeholder:text-[#4D4D4D] focus:outline-none
     }
 
     .links-table-simulation {
@@ -107,7 +72,7 @@
     }
 
     .links-table-simulation span {
-        @apply text-[#0099FA] text-3xl font-bold flex items-center
+        @apply text-[#0099FA] text-3xl font-bold hidden md:flex items-center
     }
 
     /* modal-proposta forms */

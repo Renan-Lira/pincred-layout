@@ -1,0 +1,7 @@
+
+
+@layer components {
+    .header-responsive {
+        @apply flex md:flex-col lg:flex-row gap-x-[100px] md:px-24 py-[80px] items-center justify-center lg:justify-start w-full;
+    }
+}

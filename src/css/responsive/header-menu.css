@@ -1,0 +1,16 @@
+
+
+@layer components {
+    .header-menu {
+        @apply relative flex flex-col;
+    }
+    .button-menu-small-screen {
+        @apply text-4xl md:hidden;
+    }
+    .menu-tablets-screen {
+        @apply md:flex md:bg-transparent md:static md:shadow-none;
+    }
+    .menu-items-list {
+        @apply grid gap-3 md:flex md:gap-5 md:items-center md:text-sm whitespace-nowrap xl:gap-[80px];
+    }
+}

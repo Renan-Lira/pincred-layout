@@ -1,0 +1,40 @@
+
+
+@layer components {
+
+    .footer {
+        @apply flex flex-col lg:flex-row bg-[#00447D] text-[#FFFFFF] p-2 py-5 md:p-24 justify-between text-sm
+    }
+    .col-footer {
+        @apply flex flex-col gap-1 items-center lg:items-start w-full
+    }
+    .col-footer-title {
+        @apply flex items-center justify-center font-semibold;
+    }
+    .col-footer-list {
+        @apply text-center lg:text-left;
+    }
+    .col-footer-list li {
+        @apply py-1.5;
+    }
+    .col-footer-list-links-icons {
+        @apply flex items-center justify-center lg:justify-start;
+    }
+
+    .col-footer-list-links-icons span {
+        @apply mr-1 underline decoration-1;
+    }
+
+
+    .footer-links {
+        @apply flex flex-col gap-4 lg:gap-12 2xl:gap-44 md:flex-row;
+    }
+    .footer-contatos {
+        @apply mt-3 lg:mt-0
+    }
+
+    .footer-contatos-img-div {
+        @apply flex items-start justify-center lg:justify-end font-semibold;
+    }
+
+}

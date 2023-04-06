@@ -4,12 +4,17 @@
     .menu {
         display: none;
         @apply absolute origin-top-right right-0 top-9 rounded-md shadow-md p-5 z-10 bg-white focus:outline-none;
-        @apply menu-tablet;
+        @apply menu-tablets-screen;
     }
-    .menu-tablet {
-        @apply md:flex md:bg-transparent md:static md:shadow-none;
-    }
+
+    
+    /* para funções javascript */
     .menu-visible {
         display: block !important;
     }
+
+    .nav-selected-item {
+        @apply text-[#0099FA] font-bold;
+    }
+    
 }

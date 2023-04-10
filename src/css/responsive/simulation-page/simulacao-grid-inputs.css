@@ -34,8 +34,14 @@
     .card-form-simulation-active button {
         @apply bg-[#0099FA] text-white;
     }
+    .card-form-simulation-active p {
+        @apply text-[#4D4D4D]
+    }
     .card-form-simulation-disabled span {
         @apply text-[#A2A2A2];
+    }
+    .card-form-simulation-disabled p {
+        @apply text-[#A2A2A2]
     }
     .card-form-simulation-active span {
         @apply text-[#0099FA];
@@ -61,10 +67,10 @@
     }
     
     .card-form-simulation-total-value {
-        @apply flex items-center gap-2;
+        @apply flex items-baseline gap-2;
     }
     .card-form-simulation-total-value span {
-        @apply font-extrabold text-2xl;
+        @apply font-extrabold text-2xl ;
     }
 
     

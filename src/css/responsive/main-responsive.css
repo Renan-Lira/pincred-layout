@@ -41,4 +41,7 @@
     .main-pages-with-tables .section-title .title-icon-h3-center h3{
         @apply text-2xl font-semibold;
     }
+    .main-pages-with-tables .section-title .title-icon-h3-center img{
+        @apply mr-2;
+    }
 }

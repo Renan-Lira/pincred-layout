@@ -21,4 +21,8 @@
     .card-btn {
         @apply flex bg-[#0099FA] text-[#F5F5F5] rounded-full w-[150px] h-[42px] justify-center items-center
     }
+    .card-banner-options-selected {
+        @apply bg-[#0099FA] text-white rounded py-2 px-3 w-fit;
+
+    }
 }

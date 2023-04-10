@@ -16,9 +16,9 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"/>
 
 </head>
-<body class="bg-[#00000054] flex justify-center items-center h-screen">
+<body class="bg-[#00000054] flex justify-center items-center w-full h-screen">
 
-    <div class="card-autorizacao flex flex-col gap-5 w-[593px] bg-white rounded-xl px-5 py-6">
+    <div class="card-autorizacao">
         <header class="header flex justify-between">
             <h2 class="text-[#0099FA] font-bold text-lg">Autorização para Consulta de Limite</h2>
             <span><i class="ph ph-x text-base"></i></span>
@@ -27,23 +27,30 @@
         <section>
             <p class="text-[#4D4D4D]">Caso esteja de acordo com as clausulas do empréstimo, prossiga com a assinatura do contrato abaixo:</p>
             <article class="pdf-view flex justify-center items-center w-full bg-[#EBEBEB] py-3">
-                <div class="pdf w-[305px] h-[426px] text-[6.5px] font-bold bg-white p-[18px]">
-                    <div class="pdf-title flex items-center">
-                        <i class="ph-fill ph-file-pdf text-[#F66A5C] text-sm"></i> CONTRATO PINCRED DE ASSINATURA PARA CRÉDITO CONSIGNADO
-                    </div>
+                <div class="pdf-link-mobile flex lg:hidden">
+                    <a href="">Acessar contrato</a>
                 </div>
+                <a class="w-full lg:flex justify-center hidden" href="">
+                    <div class="pdf min-w-[30%] max-w-[200px] lg:h-[230px] 2xl:h-[450px] text-[6.5px] font-bold bg-white p-[18px]">
+                        <div class="pdf-title flex items-center">
+                            <i class="ph-fill ph-file-pdf text-[#F66A5C] text-sm"></i> CONTRATO PINCRED DE ASSINATURA PARA CRÉDITO CONSIGNADO
+                        </div>
+                    </div>
+                </a>
             </article>
         </section>
 
-        <div class="input-termos flex flex-col w-full gap-8">
-            <div class="check-termos">
-                <input type="checkbox" name="termos-contrato" id="termos-contrato" class="text-2xl rounded" required>
-                <label for="termos-contrato" class="text-[#333438] font-semibold text-base">Li e concordo com o Contrato de Assinatura de Crédito Consignado.</label>
+        <div class="input-termos flex flex-col w-full text-sm gap-8">
+            <div class="input-radio-responsive w-full px-0">
+                <div>
+                    <input type="checkbox" name="termos-contrato" id="termos-contrato" class="" required>
+                </div>
+                <label for="termos-contrato" class="text-[#333438] font-semibold text-xs">Li e concordo com o Contrato de Assinatura de Crédito Consignado.</label>
             </div>
 
-            <div class="termos-buttons flex flex-col w-full text-center gap-2">
-                <button class="btn-primary-blue w-full h-fit py-[17px]">CONCLUIR SOLICITAÇÃO</button>
-                <button class="btn-primary w-full h-fit py-[17px]"><i class="ph-fill ph-share-network"></i> COMPARTILHAR CONTRATO</button>
+            <div class="termos-buttons flex flex-col w-full text-center gap-2 text-sm">
+                <button class="btn-primary-blue w-full h-fit lg:py-[17px]">CONCLUIR SOLICITAÇÃO</button>
+                <button class="btn-primary w-full h-fit lg:py-[17px]"><i class="ph-fill ph-share-network"></i> COMPARTILHAR CONTRATO</button>
                 <a href="" class="mt-1">CANCELAR</a>
             </div>
         </div>

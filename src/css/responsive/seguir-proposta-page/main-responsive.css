@@ -1,0 +1,48 @@
+
+@layer components {
+
+    .forms-proposta {
+        @apply w-full flex flex-col px-8 py-10 gap-[25px]
+    }
+    
+    /* classes active e disable para injeção com js */
+    .forms-proposta-active {
+        @apply forms-proposta bg-white
+    }
+    .forms-proposta-active .file-selector .btn-arquivo {
+        @apply bg-[#0099FA] text-white
+    }
+    .forms-proposta-active .input-label-files label {
+        @apply text-[#0099FA]
+    }
+
+    .forms-proposta-disable {
+        @apply forms-proposta bg-[#E1E1E1] text-[#A2A2A2]
+    }
+    .forms-proposta-disable .input-label-files label {
+        @apply text-[#A2A2A2]
+    }
+    .forms-proposta-disable .file-selector .btn-arquivo {
+        @apply bg-[#CCCCCC] text-[#00000054]
+    }
+    .forms-proposta-disable .file-selector .btn-camera {
+        @apply text-[#00000054]
+    }
+
+
+    .input-proposta {
+        @apply flex flex-col gap-2
+    }
+    .input-proposta label {
+        @apply text-[#0099FA] text-xs font-semibold
+    }
+    .input-proposta input {
+        @apply pb-[15px] border-b-[0.5px] border-[#4D4D4D] focus:outline-none text-[#4D4D4D] font-semibold text-base
+    }
+    .input-proposta span {
+        @apply text-[#0099FA] font-semibold text-xs
+    }
+
+
+    
+}

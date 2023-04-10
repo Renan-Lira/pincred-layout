@@ -30,7 +30,7 @@
         @apply flex flex-col gap-4 lg:gap-12 2xl:gap-44 md:flex-row;
     }
     .footer-contatos {
-        @apply mt-3 lg:mt-0
+        @apply mt-3 md:ml-12 lg:mt-0
     }
 
     .footer-contatos-img-div {

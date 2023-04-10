@@ -6,67 +6,42 @@
 @layer components {
     
 
-    /* modal-proposta forms */
-
-    .form1 {
-
-        @apply flex flex-col bg-white gap-[30px] w-[50%] px-8 py-10
-    }
-    .input-proposta {
-        @apply flex flex-col gap-2
-    }
-    .input-proposta label {
-        @apply text-[#0099FA] text-xs font-semibold
-    }
-    .input-proposta input {
-        @apply pb-[15px] border-b-[0.5px] border-[#4D4D4D] focus:outline-none text-[#4D4D4D] font-semibold text-base
-    }
-    .input-proposta span {
-        @apply text-[#0099FA] font-semibold text-xs
+    .card-maps-correspondentes {
+        @apply flex flex-col lg:flex-row bg-[#E5F5FF];
     }
 
 
-    .file-selector {
-        @apply flex pb-[15px] text-[10px] border-b-[0.5px] border-[#4D4D4D] w-full whitespace-nowrap items-center
-    }
-    .file-selector .btn-arquivo {
-        @apply bg-[#0099FA] ml-[15px] rounded-full px-4 py-2 text-white
-    }
-    .input-label-files label {
-        @apply text-[#0099FA] text-xs font-semibold
-    }
-    input[type="file"] {
-        @apply text-[#4d4d4d48] text-sm
-    }
-    input[type="file"]::file-selector-button {
-        display: none;
+    iframe {
+        @apply w-full h-[120px] lg:w-[120px];
     }
 
-
+    .card-autorizacao {
+        @apply flex flex-col gap-5 md:w-[40%] min-h-[70%] lg:h-[80%] bg-white rounded-xl px-5 py-6;
+    }
 
     /* modal-detalhamentos */
 
     .table-zebra li {
-        @apply flex justify-between bg-[#D6EFFF] mb-1 px-5 py-1.5 text-[16px]
+        @apply flex justify-between bg-[#D6EFFF] mb-1 px-5 py-1.5 lg:text-[16px]
     }
     .table-zebra li:nth-child(even) {
         @apply bg-[#E5F5FF]
     }
 
     .btn-modal-azul {
-        @apply flex bg-[#0099FA] text-[#FFFFFF] text-[14px] font-semibold rounded-full px-5 py-2.5 justify-center items-center
+        @apply flex bg-[#0099FA] text-[#FFFFFF] text-[14px] font-semibold rounded-full px-5 py-2.5 justify-center items-center whitespace-nowrap
     }
 
     /* autorizacao */
-    .check-termos {
+    /* .check-termos {
         @apply flex gap-2 items-center
-    }
-
+    } */
+/* 
     .check-termos input[type="checkbox"] {
         @apply appearance-none bg-white w-6 h-6 border-[1px] m-0 border-[#0099FA] rounded-[5px] flex items-center justify-center;
 
-    }
-
+    } */
+/* 
     .check-termos input[type="checkbox"]::before {
         content: "";
         @apply w-3 h-3 bg-[#0099FA] rounded;
@@ -77,7 +52,7 @@
       
       .check-termos input[type="checkbox"]:checked::before {
         transform: scale(1);
-      }
+      } */
 
 
 

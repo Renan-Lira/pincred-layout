@@ -1,11 +1,11 @@
 
 @layer components {
     .btn-primary{
-        @apply flex border-[2px] border-[#0099FA] rounded-full w-fit h-[42px] px-5 py-2 justify-center items-center;
+        @apply flex border-[2px] border-[#0099FA] rounded-full w-fit h-[42px] px-5 py-2 justify-center items-center whitespace-nowrap;
     }
 
     .btn-secundary {
-        @apply btn-primary h-min text-xs border-white text-white border-[2px] px-5 py-[7px] w-max
+        @apply btn-primary text-xs border-white text-white border-[2px] px-5 py-[7px] w-max
     }
 
     .btn-primary-selected {
@@ -19,5 +19,18 @@
     .btn-primary-large-home {
         @apply flex border-[3px] border-[#0099FA] rounded-full w-[265px] h-[65px] justify-center items-center font-semibold text-[#0099FA] text-[20px]
     }
+    .btn-form-proposta {
+        @apply rounded-full py-4;
+    }
+    
+    /* para uso de javascript */
+    .btn-form-proposta-active {
+        @apply btn-form-proposta bg-[#0099FA] text-white
+    }
+
+    .btn-form-proposta-disable {
+        @apply btn-form-proposta bg-[#D4D4D4] text-[#00000054]
+    }
+
 
 }

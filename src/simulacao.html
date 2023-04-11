@@ -82,7 +82,7 @@
                 <div class="simulacao-grid-area-input-radio-responsive">
                     <div class="input-radio-responsive">
                         <div>
-                            <input name="tipoemprestimo" id="servidor" type="radio" value="servidor">
+                            <input name="tipoemprestimo" id="servidor" type="radio" value="servidor" onclick="proxEtapa()">
                         </div>
                         <div>
                             <label class="text-base" for="servidor">SERVIDOR FEDERAL</label>
@@ -91,7 +91,7 @@
                     </div>
                     <div class="input-radio-responsive">
                         <div>
-                            <input name="tipoemprestimo" id="inss" type="radio" value="inss">
+                            <input name="tipoemprestimo" id="inss" type="radio" value="inss" onclick="proxEtapa()">
                         </div>
                         <div>
                             <label class="text-base" for="inss">INSS</label>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="input-radio-responsive">
                         <div>
-                            <input name="tipoemprestimo" id="privado" type="radio" value="privado">
+                            <input name="tipoemprestimo" id="privado" type="radio" value="privado" onclick="proxEtapa()">
                         </div>
                         <div>
                             <label class="text-base" for="privado">CONSIGNADO PRIVADO</label>
@@ -134,7 +134,7 @@
     
                 </div>
     
-                <div class="card-form-simulation card-form-simulation-disabled lg:area-grid-e">
+                <div class="resumo-resultado card-form-simulation card-form-simulation-disabled lg:area-grid-e">
                     <div class="flex justify-between">
                         <p class="text-lg font-semibold">RESUMO DO EMPRÉSTIMO</p>
                         <span class="text-blue-200 text-sm font-medium flex items-center">Ver Detalhes <i class="ph-fill ph-info text-lg"></i></span>
@@ -185,5 +185,6 @@
     </div>
 
     <script src="./js/menu-dropdown.js"></script>
+    <script src="./js/simulacaoRadioInput.js"></script>
 </body>
 </html>

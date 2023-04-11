@@ -2,7 +2,7 @@
 
 @layer components {
     .body-page-main-continer-with-smilepng {
-        @apply flex w-full lg:justify-between px-2 lg:pl-[100px] lg:pr-[100px] xl:pr-[150px] xl:gap-20 mb-6 items-start;
+        @apply flex w-full lg:justify-between px-2 lg:pl-[100px] lg:pr-[100px] 2xl:pr-[150px] xl:gap-20 mb-6 items-start;
     }
     
     .main-content-responsive {
@@ -36,7 +36,7 @@
         @apply flex flex-col lg:flex-row gap-5;
     }
     .main-pages-with-tables .section-title .title-icon-h3-center {
-        @apply flex text-center items-center;
+        @apply flex text-center items-center whitespace-nowrap;
     }
     .main-pages-with-tables .section-title .title-icon-h3-center h3{
         @apply text-2xl font-semibold;

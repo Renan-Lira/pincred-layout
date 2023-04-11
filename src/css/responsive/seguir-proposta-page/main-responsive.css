@@ -2,7 +2,7 @@
 @layer components {
 
     .forms-proposta {
-        @apply w-full flex flex-col px-8 py-10 gap-[25px]
+        @apply w-full flex flex-col px-8 py-10 lg:px-5 lg:py-5 gap-[25px]
     }
     
     /* classes active e disable para injeção com js */

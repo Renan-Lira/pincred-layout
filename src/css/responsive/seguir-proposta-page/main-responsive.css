@@ -10,23 +10,23 @@
         @apply forms-proposta bg-white
     }
     .forms-proposta-active .file-selector .btn-arquivo {
-        @apply bg-[#0099FA] text-white
+        @apply bg-blue-200 text-white
     }
     .forms-proposta-active .input-label-files label {
-        @apply text-[#0099FA]
+        @apply text-blue-200
     }
 
     .forms-proposta-disable {
-        @apply forms-proposta bg-[#E1E1E1] text-[#A2A2A2]
+        @apply forms-proposta bg-gray-300 text-gray-450
     }
     .forms-proposta-disable .input-label-files label {
-        @apply text-[#A2A2A2]
+        @apply text-gray-450
     }
     .forms-proposta-disable .file-selector .btn-arquivo {
-        @apply bg-[#CCCCCC] text-[#00000054]
+        @apply bg-[#CCCCCC] text-gray-transparent
     }
     .forms-proposta-disable .file-selector .btn-camera {
-        @apply text-[#00000054]
+        @apply text-gray-transparent
     }
 
 
@@ -34,13 +34,13 @@
         @apply flex flex-col gap-2
     }
     .input-proposta label {
-        @apply text-[#0099FA] text-xs font-semibold
+        @apply text-blue-200 text-xs font-semibold
     }
     .input-proposta input {
-        @apply pb-[15px] border-b-[0.5px] border-[#4D4D4D] focus:outline-none text-[#4D4D4D] font-semibold text-base
+        @apply pb-[15px] border-b-[0.5px] border-gray-600 focus:outline-none text-gray-600 font-semibold text-base
     }
     .input-proposta span {
-        @apply text-[#0099FA] font-semibold text-xs
+        @apply text-blue-200 font-semibold text-xs
     }
 
 

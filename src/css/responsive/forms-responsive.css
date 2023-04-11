@@ -1,0 +1,6 @@
+
+@layer components {
+    .form-flex-responsive {
+        @apply flex flex-col w-full gap-5 lg:w-1/2;
+    }
+}

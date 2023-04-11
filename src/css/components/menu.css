@@ -14,7 +14,7 @@
     }
 
     .nav-selected-item {
-        @apply text-[#0099FA] font-bold;
+        @apply text-blue-200 font-bold;
     }
     
 }

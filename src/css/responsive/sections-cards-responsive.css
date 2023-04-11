@@ -2,7 +2,7 @@
 
 @layer components {
     .section-card-responsive {
-        @apply flex flex-col px-2 md:px-24 py-[100px] bg-[#0099FA];
+        @apply flex flex-col px-2 md:px-24 py-[100px] bg-blue-200;
     }
 
     .section-card-title-responsive {

@@ -16,12 +16,12 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"/>
 
 </head>
-<body class="bg-gray-transparent flex justify-center items-center w-full h-screen">
+<body class="bg-gray-transparent flex items-center justify-center h-screen">
 
     <div class="card-autorizacao">
         <header class="header flex justify-between">
             <h2 class="text-blue-200 font-bold text-lg">Autorização para Consulta de Limite</h2>
-            <span><i class="ph ph-x text-base"></i></span>
+            <span data-modal-close="autorizacaoModal" ><i class="ph ph-x text-base"></i></span>
         </header>
 
         <section>
@@ -51,7 +51,7 @@
             <div class="termos-buttons flex flex-col w-full text-center gap-2 text-sm">
                 <button class="btn-primary-blue w-full h-fit lg:py-[17px]">CONCLUIR SOLICITAÇÃO</button>
                 <button class="btn-primary w-full h-fit lg:py-[17px]"><i class="ph-fill ph-share-network"></i> COMPARTILHAR CONTRATO</button>
-                <a href="" class="mt-1">CANCELAR</a>
+                <a data-modal-close="autorizacaoModal" href="#" class="mt-1">CANCELAR</a>
             </div>
         </div>
 

@@ -169,7 +169,7 @@
                         <span>*Arquivo com tamanho máximo de 5 MBs.</span>
                     </div>
 
-                    <button class="btn-form-proposta-disable">CONTINUAR</button>
+                    <button data-modal-target="autorizacaoModal" type="button" class="btn-form-proposta-disable">CONTINUAR</button>
                 </div>
             </form>
 
@@ -179,7 +179,14 @@
         </div>
     </div>
 
+    <!-- modal -->
+    <div id="autorizacaoModal" class="w-0 h-full transition-all absolute top-0 left-0 z-50">
+        <iframe src="./modal-autorizacao.html" frameborder="0" width="100%" height="100%" class=""></iframe>
+    </div>
+
+
     <script src="./js/menu-dropdown.js"></script>
+    <script src="./js/modalEnable.js"></script>
 
 </body>
 

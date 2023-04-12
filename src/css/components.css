@@ -2,6 +2,7 @@
 @import './components/menu.css';
 @import './components/cards.css';
 @import './components/file-selector.css';
+@import './components/tables.css';
 
 @import './responsive/headers-responsive.css';
 @import './responsive/header-menu.css';

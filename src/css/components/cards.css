@@ -27,7 +27,7 @@
     }
 
     .card-autorizacao {
-        @apply flex flex-col gap-5 md:w-[40%] min-h-[70%] lg:h-[80%] bg-white rounded-xl px-5 py-6;
+        @apply flex flex-col gap-5 xs:w-[80%] max-w-[500px] min-h-fit bg-white rounded-xl px-5 py-6;
     }
 
     .card-maps-correspondentes {

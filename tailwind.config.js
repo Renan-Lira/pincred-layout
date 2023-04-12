@@ -4,6 +4,11 @@ module.exports = {
     "./src/**/*.{html,js}", 
   ],
   theme: {
+    extend: {
+      screens: {
+        'xs': '500px'
+      }
+    },
     container: {
       
       padding: {

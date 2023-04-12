@@ -3,3 +3,8 @@
 @import "tailwindcss/utilities";
 @import "./css/components.css";
 
+
+html {
+    min-height: 100%;
+    position: relative;
+}

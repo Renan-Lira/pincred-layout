@@ -38,6 +38,10 @@ jobs:
           node-version: '18.x'
       - run: npm install
       - run: npm run compile
+      - name: Images upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        path: './images'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

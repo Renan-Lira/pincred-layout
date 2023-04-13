@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "compile": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "compile": "npx tailwindcss -i ./src/input.css -o ./src/css/dist/output.css",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/css/dist/output.css --watch"
   },
   "devDependencies": {
     "postcss-import": "^15.1.0",

@@ -17,6 +17,10 @@
         @apply bg-blue-200
     }
 
+    .input-radio-responsive .input-radio-square {
+        @apply rounded-md w-6 h-6 border-4
+    }
+
     .card-links-form-simulacao {
         @apply bg-white flex flex-col px-[30px] py-8 gap-[10px] justify-center;
     }

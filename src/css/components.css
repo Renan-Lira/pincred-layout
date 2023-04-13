@@ -1,15 +1,2 @@
-@import './components/buttons.css';
-@import './components/menu.css';
-@import './components/cards.css';
-@import './components/file-selector.css';
-@import './components/tables.css';
-
-@import './responsive/headers-responsive.css';
-@import './responsive/header-menu.css';
-@import './responsive/main-responsive.css';
-@import './responsive/sections-cards-responsive.css';
-@import './responsive/footer-responsive.css';
-@import './responsive/simulation-page/main-responsive.css';
-@import './responsive/simulation-page/simulacao-grid-inputs.css';
-@import './responsive/seguir-proposta-page/main-responsive.css';
-@import './responsive/forms-responsive.css';
+@import './components/index.css';
+@import './responsive/index.css';

@@ -1,0 +1,9 @@
+@import './headers-responsive.css';
+@import './header-menu.css';
+@import './main-responsive.css';
+@import './sections-cards-responsive.css';
+@import './footer-responsive.css';
+@import './simulation-page/main-responsive.css';
+@import './simulation-page/simulacao-grid-inputs.css';
+@import './seguir-proposta-page/main-responsive.css';
+@import './forms-responsive.css';

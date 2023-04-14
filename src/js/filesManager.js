@@ -3,7 +3,7 @@
 const fileSelector = (idInput) => {
 
     const input = document.querySelector(`#${idInput}`)
-    input.accept = 'image/*;'
+    input.capture = false
     input.click()
 
 
@@ -12,7 +12,7 @@ const fileSelector = (idInput) => {
 const camOpen = (idInput) => {
     const input = document.querySelector(`#${idInput}`)
 
-    input.accept = 'image/*;capture=camera'
+    input.capture = true
 
     input.click()
 }

@@ -25,4 +25,4 @@
 > dessa forma a lógica é implementada para que tudo funcione normalmente
 
 ## Links
-### [Vizualizar Projeto](https://renan-lira.github.io/pincred-layout/)
+### [Vizualizar Projeto](https://renan-lira.github.io/pincred-layout/src/)

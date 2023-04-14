@@ -4,8 +4,16 @@
     .file-selector {
         @apply flex flex-col md:flex-row gap-3 mt-2 pb-[15px] text-[10px] border-b-[0.5px] border-gray-600 w-full whitespace-nowrap items-center;
     }
+    .file-selector .file-selector-input {
+        @apply flex justify-evenly md:justify-normal w-full 
+    }
+
+    .file-selector-input button {
+        @apply font-bold text-lg hidden
+    }
+
     .file-selector .btn-arquivo {
-        @apply ml-[15px] rounded-full px-4 py-2
+        @apply md:ml-[15px] rounded-full px-4 py-2
     }
     .file-selector .btn-camera {
         
@@ -14,7 +22,7 @@
         @apply text-xs font-semibold
     }
     input[type="file"] {
-        @apply text-[#4d4d4d48] text-sm w-full text-center;
+        @apply text-[#4d4d4d4d] text-sm md:max-xl:w-32 text-center;
     }
     input[type="file"]::file-selector-button {
         display: none;

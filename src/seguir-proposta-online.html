@@ -16,7 +16,7 @@
 
     <!-- icons -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css" />
-
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
 </head>
 
 <body class="bg-gray-100 text-black">
@@ -124,7 +124,7 @@
                 </div>
 
                 <div class="form-flex-responsive">
-                    <div class="forms-proposta-disable">
+                    <div class="forms-proposta-active">
 
                         <h4 class="text-gray-600 font-medium text-base">Envio de documentos e anexos:</h4>
 
@@ -132,7 +132,10 @@
                             <label for="docidentificacao"><i class="ph-fill ph-camera"></i> DOCUMENTO ORIGINAL DE
                                 IDENTIFICAÇÃO COM FOTO*</label>
                             <div class="file-selector">
-                                <input type="file" accept="image/*" max="1" id="docidentificacao">
+                                <div class="file-selector-input">
+                                    <input type="file" accept="image/*" max="1" id="docidentificacao" onchange="inputcontroller(this)">
+                                    <button class="remove-file" type="button"><i class="ph-bold ph-x"></i></button>
+                                </div>
                                 <button type="button" class="btn-camera" onclick="camOpen('docidentificacao')">ABRIR CAMERA</button>
                                 <button type="button" onclick="fileSelector('docidentificacao')" class="btn-arquivo">SELECIONAR IMAGEM</button>
                             </div>
@@ -142,7 +145,10 @@
                             <label for="pessoafisica"><i class="ph-fill ph-identification-card"></i> CADASTRO DE PESSOA
                                 FÍSICA*</label>
                             <div class="file-selector">
-                                <input type="file" accept="image/*" max="1" id="pessoafisica">
+                                <div class="file-selector-input">
+                                    <input type="file" accept="image/*" max="1" id="pessoafisica" onchange="inputcontroller(this)">
+                                    <button class="remove-file" type="button"><i class="ph-bold ph-x"></i></button>
+                                </div>
                                 <button type="button" class="btn-camera" onclick="camOpen('pessoafisica')">ABRIR CAMERA</button>
                                 <button type="button" onclick="fileSelector('pessoafisica')" class="btn-arquivo">SELECIONAR IMAGEM</button>
                             </div>
@@ -151,7 +157,10 @@
                         <div class="input-label-files">
                             <label for="comprovanterenda"><i class="ph-fill ph-money"></i> COMPROVANTE DE RENDA*</label>
                             <div class="file-selector">
-                                <input type="file" accept="image/*" max="1" id="comprovanterenda">
+                                <div class="file-selector-input">
+                                    <input type="file" accept="image/*" max="1" id="comprovanterenda" onchange="inputcontroller(this)">
+                                    <button class="remove-file" type="button"><i class="ph-bold ph-x"></i></button>
+                                </div>
                                 <button type="button" class="btn-camera" onclick="camOpen('comprovanterenda')">ABRIR CAMERA</button>
                                 <button type="button" onclick="fileSelector('comprovanterenda')" class="btn-arquivo">SELECIONAR IMAGEM</button>
                             </div>
@@ -161,7 +170,10 @@
                             <label for="comprovanteendereco"><i class="ph-fill ph-house-line"></i> COMPROVANTE DE
                                 ENDEREÇO*</label>
                             <div class="file-selector">
-                                <input type="file" accept="image/*" max="1" id="comprovantendereco">
+                                <div class="file-selector-input">
+                                    <input type="file" accept="image/*" max="1" id="comprovantendereco" onchange="inputcontroller(this)">
+                                    <button class="remove-file" type="button"><i class="ph-bold ph-x"></i></button>
+                                </div>
                                 <button type="button" class="btn-camera" onclick="camOpen('comprovantendereco')">ABRIR CAMERA</button>
                                 <button type="button" onclick="fileSelector('comprovantendereco')" class="btn-arquivo">SELECIONAR IMAGEM</button>
                             </div>

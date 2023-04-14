@@ -132,9 +132,9 @@
                             <label for="docidentificacao"><i class="ph-fill ph-camera"></i> DOCUMENTO ORIGINAL DE
                                 IDENTIFICAÇÃO COM FOTO*</label>
                             <div class="file-selector">
-                                <input type="file" accept="image/*;capture=camera" id="docidentificacao" capture>
-                                <button class="btn-camera">ABRIR CAMERA</button>
-                                <button class="btn-arquivo">SELECIONAR IMAGEM</button>
+                                <input type="file" accept="image/*" max="1" id="docidentificacao" capture>
+                                <button class="btn-camera" onclick="camOpen('docidentificacao')">ABRIR CAMERA</button>
+                                <button type="button" onclick="fileSelector('docidentificacao')" class="btn-arquivo">SELECIONAR IMAGEM</button>
                             </div>
                         </div>
 
@@ -142,18 +142,18 @@
                             <label for="pessoafisica"><i class="ph-fill ph-identification-card"></i> CADASTRO DE PESSOA
                                 FÍSICA*</label>
                             <div class="file-selector">
-                                <input type="file" accept="image/*;capture=camera" id="pessoafisica" capture>
-                                <button class="btn-camera">ABRIR CAMERA</button>
-                                <button class="btn-arquivo">SELECIONAR IMAGEM</button>
+                                <input type="file" accept="image/*" max="1" id="pessoafisica" capture>
+                                <button class="btn-camera" onclick="camOpen('pessoafisica')">ABRIR CAMERA</button>
+                                <button type="button" onclick="fileSelector('pessoafisica')" class="btn-arquivo">SELECIONAR IMAGEM</button>
                             </div>
                         </div>
 
                         <div class="input-label-files">
                             <label for="comprovanterenda"><i class="ph-fill ph-money"></i> COMPROVANTE DE RENDA*</label>
                             <div class="file-selector">
-                                <input type="file" accept="image/*;capture=camera" id="comprovanterenda" capture>
-                                <button class="btn-camera">ABRIR CAMERA</button>
-                                <button class="btn-arquivo">SELECIONAR IMAGEM</button>
+                                <input type="file" accept="image/*" max="1" id="comprovanterenda" capture>
+                                <button class="btn-camera" onclick="camOpen('comprovanterenda')">ABRIR CAMERA</button>
+                                <button type="button" onclick="fileSelector('comprovanterenda')" class="btn-arquivo">SELECIONAR IMAGEM</button>
                             </div>
                         </div>
 
@@ -161,9 +161,9 @@
                             <label for="comprovanteendereco"><i class="ph-fill ph-house-line"></i> COMPROVANTE DE
                                 ENDEREÇO*</label>
                             <div class="file-selector">
-                                <input type="file" accept="image/*;capture=camera" id="comprovantendereco" capture>
-                                <button class="btn-camera">ABRIR CAMERA</button>
-                                <button class="btn-arquivo">SELECIONAR IMAGEM</button>
+                                <input type="file" accept="image/*" max="1" id="comprovantendereco" capture>
+                                <button class="btn-camera" onclick="camOpen('comprovantendereco')">ABRIR CAMERA</button>
+                                <button type="button" onclick="fileSelector('comprovantendereco')" class="btn-arquivo">SELECIONAR IMAGEM</button>
                             </div>
                         </div>
                         <span>*Arquivo com tamanho máximo de 5 MBs.</span>
@@ -187,6 +187,7 @@
 
     <script src="./js/menu-dropdown.js"></script>
     <script src="./js/modalEnable.js"></script>
+    <script src="./js/filesManager.js"></script>
 
 </body>
 

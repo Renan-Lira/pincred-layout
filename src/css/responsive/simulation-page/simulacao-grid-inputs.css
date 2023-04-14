@@ -29,6 +29,9 @@
     .card-links-form-simulacao-active {
         @apply bg-white text-blue-200;
     }
+    .card-links-form-simulacao-active .links-table-simulation-content h4 {
+        @apply text-blue-200;
+    }
     .card-links-form-simulacao-disabled {
         @apply bg-gray-300 text-gray-800;
     } 

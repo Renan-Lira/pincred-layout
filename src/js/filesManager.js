@@ -11,7 +11,7 @@ const fileSelector = (idInput) => {
 
 const camOpen = (idInput) => {
     const input = document.querySelector(`#${idInput}`)
-    input.setAttribute('capture', 'capture')
+    input.setAttribute('capture', 'user')
     input.capture = true
 
     input.click()

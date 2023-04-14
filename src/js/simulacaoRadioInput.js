@@ -11,3 +11,25 @@ function proxEtapa() {
         })
    }
 }
+
+function calcular() {
+
+    const objs = {
+        '.card-links-form-simulacao': 'card-links-form-simulacao',
+        '#resumo-resultado': 'card-form-simulation'
+    }
+
+    for (const key in objs) {
+
+        let card = document.querySelector(key)
+
+        if (card.classList.contains(`${objs[key]}-disabled`)) {
+
+            card.classList.remove(`${objs[key]}-disabled`)
+            card.classList.add(`${objs[key]}-active`)
+        }
+    }
+
+    
+
+}

@@ -14,19 +14,20 @@ function proxEtapa() {
 
 function calcular() {
 
-    const objs = {
+    // identificador: classe css a ser modificada
+    const cards = {
         '.card-links-form-simulacao': 'card-links-form-simulacao',
         '#resumo-resultado': 'card-form-simulation'
     }
 
-    for (const key in objs) {
+    for (const id in cards) {
 
-        let card = document.querySelector(key)
+        let card = document.querySelector(id)
 
-        if (card.classList.contains(`${objs[key]}-disabled`)) {
+        if (card.classList.contains(`${cards[id]}-disabled`)) {
 
-            card.classList.remove(`${objs[key]}-disabled`)
-            card.classList.add(`${objs[key]}-active`)
+            card.classList.remove(`${cards[id]}-disabled`)
+            card.classList.add(`${cards[id]}-active`)
         }
     }
 

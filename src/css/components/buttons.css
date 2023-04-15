@@ -32,5 +32,26 @@
         @apply btn-form-proposta bg-[#D4D4D4] text-gray-transparent
     }
 
+    /* INPUT RADIO */
+
+    .input-radio-responsive {
+        @apply flex gap-x-2 bg-white md:flex-1 [&>div>label]:text-blue-200 h-[100px] lg:w-1/3 items-center px-3 lg:px-[25px] rounded text-white
+    }
+    .input-radio-responsive p {
+        @apply text-gray-600;
+
+    }
+    .input-radio-responsive input {
+        @apply w-[30px] h-[30px] appearance-none outline-2 rounded-full outline-blue-200 outline border-[3px] border-solid
+    }
+    .input-radio-responsive input:checked {
+        @apply bg-blue-200
+    }
+
+    .input-radio-responsive .input-radio-square {
+        @apply rounded-md w-6 h-6 border-4
+    }
+
+
 
 }

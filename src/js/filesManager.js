@@ -22,21 +22,20 @@ const inputcontroller = (ev) => {
 
     if (ev.value) {
         buttonRemove.style.display = 'flex'
-        buttonsRemoveFile(ev)
+        ev.classList.add('!text-black')
+        buttonsRemoveFile(buttonRemove, ev)
     } else {
         buttonRemove.style.display = 'none'
+
     }
 
 
 }
 
-const buttonsRemoveFile = (input) => {
-    let buttons = document.querySelectorAll('.remove-file')
-    
-    buttons.forEach((button, index) => {
-        button.addEventListener('click', () => {
-            input.value = ''
-            button.style.display = 'none'
-        })
+const buttonsRemoveFile = (buttonRemove, input) => {
+    buttonRemove.addEventListener('click', () => {
+        input.value = ''
+        input.classList.remove('!text-black')
+        buttonRemove.style.display = 'none'
     })
 }

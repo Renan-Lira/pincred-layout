@@ -137,7 +137,7 @@
                 <div id="resumo-resultado" class="card-form-simulation card-form-simulation-disabled lg:area-grid-e">
                     <div class="flex justify-between">
                         <p class="text-lg font-semibold">RESUMO DO EMPRÉSTIMO</p>
-                        <span class="text-blue-200 text-sm font-medium flex items-center">Ver Detalhes <i class="ph-fill ph-info text-lg"></i></span>
+                        <span data-modal-target="detalhamentos" class="text-blue-200 text-sm font-medium flex items-center text-right">Ver Detalhes <i class="ph-fill ph-info text-lg"></i></span>
                     </div>
                     <div class="card-form-simulation-total-value">
                         <span class="">12x</span>
@@ -184,7 +184,12 @@
         </div>
     </div>
 
+    <div id="detalhamentos" class="w-0 h-full transition-all absolute top-0 left-0 z-50">
+        <iframe src="./modal-detalhamentos.html" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+
     <script src="./js/menu-dropdown.js"></script>
     <script src="./js/simulacaoRadioInput.js"></script>
+    <script src="./js/modalEnable.js"></script>
 </body>
 </html>

@@ -12,14 +12,14 @@ const main = (params) => {
             let scrollTarget = modal.children.item(0)
 
             modal.style.width = '100%'
-            scrollTarget.scrollIntoView({behavior: "smooth",block:"center"})
+            scrollTarget.scrollIntoView({block: "center", inline: "center", behavior:"smooth"})
 
             // ativação dos botões para fechar o modal
             let buttonsClose = scrollTarget.contentDocument.body.querySelectorAll('[data-modal-close]')
             buttonsClose.forEach((close, index) => {
                 close.addEventListener('click', () => modal.style.width = "0")
             })
-        })
+        },{passive: true})
 
     })
 }

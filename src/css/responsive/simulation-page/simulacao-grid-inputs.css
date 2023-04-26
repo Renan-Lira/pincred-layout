@@ -16,9 +16,18 @@
     .card-links-form-simulacao-active .flex-content-gap3 h4 {
         @apply text-blue-200;
     }
+    .card-links-form-simulacao-active .flex-content-gap3 p{
+        @apply text-gray-600;
+    }
+    .card-links-form-simulacao-active .links-table-simulation span {
+        @apply text-blue-200;
+    }
     .card-links-form-simulacao-disabled {
         @apply bg-gray-300 text-gray-800;
     } 
+    .card-links-form-simulacao-disabled .links-table-simulation span {
+        @apply text-gray-600;
+    }
     .card-links-form-simulacao-active .links-table-simulation {
         @apply bg-blue-100
     }

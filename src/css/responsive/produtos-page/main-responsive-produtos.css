@@ -1,0 +1,25 @@
+
+@layer components {
+    .main-content-produtos {
+        @apply flex flex-col w-full gap-16 mb-14;
+    }
+    .cards-produtos-div {
+        @apply flex flex-col gap-3;
+    }
+    .article-card-div {
+        @apply flex flex-col items-end;
+    }
+    .card-produto {
+        @apply flex flex-col md:flex-row w-full justify-end md:gap-16;
+    }
+    .header-card-produto {
+        @apply flex text-2xl xl:text-4xl justify-center md:justify-start font-bold items-center md:gap-4 px-2 md:px-0;
+
+    }
+    .header-card-produto h5 {
+        @apply w-min
+    }
+    .body-card-produto {
+        @apply flex justify-center md:w-1/2 items-center p-14 h-72 text-white text-center md:text-right;
+    }
+}

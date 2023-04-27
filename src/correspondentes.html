@@ -22,7 +22,7 @@
 
         <div class="header-menu">
             <div>
-                <button class="button-menu-small-screen" onclick=clickButtonMenu()>
+                <button class="button-menu-small-screen" id="button-menu">
                     <i class="ph-fill ph-list"></i>
                 </button>
             </div>
@@ -33,12 +33,29 @@
                         <a class="" href="./index.html">
                             <li>Home</li>
                         </a>
-                        <a href="">
-                            <li class="flex items-center">
-                                <span class="mr-1">Produtos</span>
-                                <i class="ph-fill ph-caret-down"></i>
-                            </li>
-                        </a>
+                        <div class="relative">
+                            <a href="#">
+                                <li class="flex items-center" id="button-sub-menu-produtos">
+                                    <span class="mr-1">Produtos</span>
+                                    <i class="ph-fill ph-caret-down"></i>
+                                </li>
+                            </a>
+                            <div id="menu-list-produtos" class="sub-menu-produtos">
+                                <ul class="sub-menu-items-list">
+                                    <a href="#">
+                                        <li>CDC</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>
+                                            Crédito Consignado
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Crédito Pessoal</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="">
                             <li>Informações</li>
                         </a>
@@ -48,7 +65,7 @@
                         <a href="">
                             <li>Contato</li>
                         </a>
-                        <a class="btn-primary" href="">
+                        <a class="btn-primary" href="./simulacao.html">
                             <li>Simulador</li>
                         </a>
                     </ul>

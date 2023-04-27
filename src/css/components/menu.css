@@ -7,6 +7,10 @@
         @apply menu-tablets-screen;
     }
 
+    .sub-menu-produtos {
+        display: none;
+        @apply absolute origin-top-left left-0 top-6 rounded-md shadow-md p-5 z-10 bg-white focus:outline-none;
+    }
     
     /* para funções javascript */
     .menu-visible {

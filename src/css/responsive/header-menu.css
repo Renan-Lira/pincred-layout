@@ -13,4 +13,7 @@
     .menu-items-list {
         @apply grid gap-3 md:flex md:gap-5 md:items-center md:text-sm whitespace-nowrap xl:gap-[80px];
     }
+    .sub-menu-items-list {
+        @apply grid gap-3 whitespace-nowrap;
+    }
 }

@@ -1,0 +1,12 @@
+
+@layer components {
+    .title-underline {
+        @apply  underline underline-offset-[15px] font-extrabold text-2xl md:text-5xl;
+    }
+    .title-underline-blue {
+        @apply title-underline text-blue-200
+    }
+    .title-underline-blue-800 {
+        @apply title-underline text-blue-800
+    }
+}

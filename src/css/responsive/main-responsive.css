@@ -44,4 +44,14 @@
     .main-pages-with-tables .section-title .title-icon-h3-center img{
         @apply mr-2;
     }
+    
+    .main-content-responsive-pages {
+        @apply flex flex-col md:px-24 px-2 md:justify-center mb-[55px];
+    }
+    .main-content-responsive-pages .header-title {
+        @apply flex flex-col gap-6
+    }
+    
+
+
 }

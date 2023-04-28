@@ -1,0 +1,23 @@
+@layer components {
+
+    .article-title-info-pages {
+        @apply flex items-end justify-between
+    }
+    .article-title-info-pages .text-title {
+        @apply flex flex-col text-blue-200
+    }
+
+    .body-content {
+        @apply flex flex-col gap-5
+    }   
+    .body-content-maps {
+        @apply flex flex-wrap gap-y-4 gap-x-5 ;
+    }
+
+    .body-content-maps .card-maps-correspondentes {
+        @apply text-sm p-0
+    }
+    .body-content-demo-financeiras {
+        @apply flex flex-col gap-4
+    }
+}

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <title>Fale Conosco</title>
+    <title>Denuncias</title>
 
     <link rel="stylesheet" href="./css/dist/output.css">
 
@@ -79,85 +79,92 @@
         </div>
     </header>
 
+    <div class="flex mb-20 px-2 md:px-24">
 
-    <main class="main-content-responsive-pages">
-        <div class="header-title">
-            <div class="title-underline-blue-800">
-                <h2>Canal de Denúncias</h2>
-            </div>
-        </div>
-    </main>
-    <section class="px-2 md:px-24 flex flex-col gap-10 mb-20">
-        <div>
-            <span class="text-base text-gray-600">A PINCRED disponibiliza este canal de comunicação por meio do qual podem ser reportadas, situações com indícios de ilicitude de qualquer natureza, relacionadas às atividades da instituição. A manifestação pode ser feita através do canal abaixo.</span>
-        </div>
-        <div class="form-flex-responsive">
-
-            <form action="" class="flex flex-col lg:flex-row w-full gap-1 items-start">
-                <div class="forms-proposta-active">
-                    <h4 class="text-gray-600 text-base">Por favor, nos informe seus dados e tipo de denúncia:</h4>
-                    <div class="grid grid-cols-2 gap-[30px]">
-                        <div class="input-proposta">
-                            <label for="motivo">IDENTIFICAÇÃO*</label>
-                            <div class="flex gap-2">
-                                <label class="flex w-full gap-2" for="anonima">
-                                    <input class="scale-150" type="radio" name="tipoidentificacao" value="anonima" id="anonima">
-                                    Anônima
-                                </label>
-                                <label class="flex w-full gap-2" for="identificada">
-                                    <input class="scale-150" type="radio" name="tipoidentificacao" value="identificada " id="identificada">
-                                    Identificada
-                                </label>
-                            </div>
-                            <span>Campo obrigatório*</span>
-                        </div>
-                        <div class="input-proposta">
-                            <label for="motivo">MOTIVO DA DENUNCIA</label>
-                            <select name="motivo" id="motivo">
-                                <option value="teste1">Teste</option>
-                                <option value="reclamacoes">reclamações e elogios</option>
-                            </select>
-                            <span>Campo obrigatório*</span>
-                        </div>
+        <main class="flex-1">
     
-                        <div class="input-proposta">
-                            <label for="nomecompleto">NOME COMPLETO</label>
-                            <input type="text" id="nomecompleto" placeholder="Nome Completo">
-                            <span>Campo obrigatório*</span>
-                        </div>
-    
-                        <div class="input-proposta">
-                            <label for="email">EMAIL</label>
-                            <input type="text" id="email" placeholder="usuario@exemplo.com.br">
-                            <span>Campo obrigatório*</span>
-                        </div>
-    
-                        <div class="input-proposta">
-                            <label for="cpf">CPF</label>
-                            <input type="text" id="cpf" placeholder="000.000.000-00">
-                            <span>Campo obrigatório*</span>
-                        </div>
-    
-                        <div class="input-proposta">
-                            <label for="telefone">TELEFONE</label>
-                            <input type="text" id="telefone" placeholder="(99) 9 9999-9999 ">
-                            <span>Campo obrigatório*</span>
-                        </div>
-    
-                        <div class="input-proposta col-span-2">
-                            <label for="detalhesDenuncia">DETALHES DA DENUNCIA</label>
-                            <textarea name="detalhesDenuncia" id="detalhesDenuncia" placeholder="Digite sua mensagem..." maxlength="200"></textarea>
-                            <span>Campo obrigatório*</span>
-                        </div>
-    
+            <section class="main-content-responsive-pages">
+                <div class="header-title">
+                    <div class="title-underline-blue-800">
+                        <h2>Canal de Denúncias</h2>
                     </div>
                 </div>
-            </form>
-            <button type="button" class="btn-form-proposta-active">CONTINUAR</button>
+            </section>
+            <section class="flex flex-col gap-10">
+                <div>
+                    <span class="text-base text-gray-600">A PINCRED disponibiliza este canal de comunicação por meio do qual podem ser reportadas, situações com indícios de ilicitude de qualquer natureza, relacionadas às atividades da instituição. A manifestação pode ser feita através do canal abaixo.</span>
+                </div>
+                <div class="form-flex-responsive">
+        
+                    <form action="" class="flex flex-col lg:flex-row w-full gap-1 items-start">
+                        <div class="forms-proposta-active">
+                            <h4 class="text-gray-600 text-base">Por favor, nos informe seus dados e tipo de denúncia:</h4>
+                            <div class="grid grid-cols-2 gap-[30px]">
+                                <div class="input-proposta">
+                                    <label for="motivo">IDENTIFICAÇÃO*</label>
+                                    <div class="flex gap-2">
+                                        <label class="flex w-full gap-2" for="anonima">
+                                            <input class="scale-150" type="radio" name="tipoidentificacao" value="anonima" id="anonima">
+                                            Anônima
+                                        </label>
+                                        <label class="flex w-full gap-2" for="identificada">
+                                            <input class="scale-150" type="radio" name="tipoidentificacao" value="identificada " id="identificada">
+                                            Identificada
+                                        </label>
+                                    </div>
+                                    <span>Campo obrigatório*</span>
+                                </div>
+                                <div class="input-proposta">
+                                    <label for="motivo">MOTIVO DA DENUNCIA</label>
+                                    <select name="motivo" id="motivo">
+                                        <option value="teste1">Teste</option>
+                                        <option value="reclamacoes">reclamações e elogios</option>
+                                    </select>
+                                    <span>Campo obrigatório*</span>
+                                </div>
+            
+                                <div class="input-proposta">
+                                    <label for="nomecompleto">NOME COMPLETO</label>
+                                    <input type="text" id="nomecompleto" placeholder="Nome Completo">
+                                    <span>Campo obrigatório*</span>
+                                </div>
+            
+                                <div class="input-proposta">
+                                    <label for="email">EMAIL</label>
+                                    <input type="text" id="email" placeholder="usuario@exemplo.com.br">
+                                    <span>Campo obrigatório*</span>
+                                </div>
+            
+                                <div class="input-proposta">
+                                    <label for="cpf">CPF</label>
+                                    <input type="text" id="cpf" placeholder="000.000.000-00">
+                                    <span>Campo obrigatório*</span>
+                                </div>
+            
+                                <div class="input-proposta">
+                                    <label for="telefone">TELEFONE</label>
+                                    <input type="text" id="telefone" placeholder="(99) 9 9999-9999 ">
+                                    <span>Campo obrigatório*</span>
+                                </div>
+            
+                                <div class="input-proposta col-span-2">
+                                    <label for="detalhesDenuncia">DETALHES DA DENUNCIA</label>
+                                    <textarea name="detalhesDenuncia" id="detalhesDenuncia" placeholder="Digite sua mensagem..." maxlength="200"></textarea>
+                                    <span>Campo obrigatório*</span>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </form>
+                    <button type="button" class="btn-form-proposta-active">CONTINUAR</button>
+                </div>
+        
+            </section>
+        </main>
+        <div>
+            <img class="hidden xl:flex" src="../images/img-smile-01-blue.svg" alt="">
         </div>
-
-    </section>
-
+    </div>
 
 
 

@@ -46,7 +46,7 @@
     }
     
     .main-content-responsive-pages {
-        @apply flex flex-col md:px-24 px-2 md:justify-center mb-[55px];
+        @apply flex flex-col md:justify-center mb-[55px];
     }
     .main-content-responsive-pages .header-title {
         @apply flex flex-col gap-6

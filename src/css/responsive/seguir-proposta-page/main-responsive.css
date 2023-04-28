@@ -31,14 +31,21 @@
 
 
     .input-proposta {
-        @apply flex flex-col gap-2
+        @apply flex flex-col gap-2 col-span-2 md:col-span-1
     }
     .input-proposta label {
         @apply text-blue-200 text-xs font-semibold
     }
-    .input-proposta input {
-        @apply pb-[15px] border-b-[0.5px] border-gray-600 focus:outline-none text-gray-600 font-semibold text-base
+    .input-proposta input, .input-proposta select {
+        @apply pb-[15px] border-b-[0.5px] border-gray-600 focus:outline-none text-gray-600 font-semibold text-base bg-transparent
     }
+    .input-proposta textarea {
+        @apply border-0 bg-gray-300 rounded-md p-3 placeholder:text-gray-600 placeholder:opacity-60 text-xs h-24 resize-none
+    }
+    .input-proposta textarea:focus {
+        @apply outline-none
+    }
+   
     .input-proposta span {
         @apply text-blue-200 font-semibold text-xs
     }

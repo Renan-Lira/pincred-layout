@@ -3,19 +3,49 @@
 
 
     .cards {
-        @apply flex flex-col lg:flex-row items-center justify-between lg:justify-center gap-2 xl:gap-10
+        @apply flex flex-col lg:flex-row items-stretch justify-between lg:justify-center gap-2 xl:gap-10
     }
     .card {
-        @apply flex flex-col font-medium w-full lg:w-1/3 min-w-[260px] max-w-[540px] h-[333px] justify-between bg-white rounded-md p-10 lg:max-xl:p-5
+        @apply flex flex-col font-medium w-full lg:w-1/3 min-w-[260px] max-w-[540px] rounded-md p-10 lg:max-xl:p-5
     }
+    .card-small {
+        @apply h-fit gap-7;
+    }
+    .card-big {
+        @apply h-[333px] justify-between;
+    }
+
+    .card-color-blue {
+        @apply bg-blue-200;
+    }
+    .card-color-white {
+        @apply bg-white;
+    }
+
+    .card-color-blue .card-title {
+        @apply text-white;
+    }
+    .card-color-blue .card-body {
+        @apply text-white;
+    }
+    .card-color-white .card-body {
+        @apply text-gray-600;
+    }
+    .card-color-white .card-title {
+        @apply text-blue-200;
+    }
+
     .card-title {
-        @apply flex justify-between items-end font-bold text-blue-200 text-xl
+        @apply flex justify-between items-end font-bold text-xl
     }
     .card-title img {
         @apply w-12
     }
     .card-body {
         @apply text-sm
+    }
+    .card-body-list {
+        @apply flex flex-col gap-2;
     }
     .card-footer {
         @apply flex justify-end

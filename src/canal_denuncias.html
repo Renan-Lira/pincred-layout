@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <title>Fale Conosco</title>
+
+    <link rel="stylesheet" href="./css/dist/output.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css" />
+
+</head>
+
+<body class="bg-gray-100 flex flex-col">
+    <header class="header-responsive">
+        <img class="w-24" src="../images/logo-pincred.svg" alt="">
+
+        <div class="header-menu">
+            <div>
+                <button class="button-menu-small-screen" id="button-menu">
+                    <i class="ph-fill ph-list"></i>
+                </button>
+            </div>
+
+            <div id="menu-list" class="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                tabindex="-1">
+                <nav class="p-1">
+                    <ul class="menu-items-list">
+                        <a class="" href="./index.html">
+                            <li>Home</li>
+                        </a>
+                        <div class="relative">
+                            <a href="#">
+                                <li class="flex items-center" id="button-sub-menu-produtos">
+                                    <span class="mr-1">Produtos</span>
+                                    <i class="ph-fill ph-caret-down"></i>
+                                </li>
+                            </a>
+                            <div id="menu-list-produtos" class="sub-menu-produtos">
+                                <ul class="sub-menu-items-list">
+                                    <a href="#">
+                                        <li>CDC</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>
+                                            Crédito Consignado
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Crédito Pessoal</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="">
+                            <li>Informações</li>
+                        </a>
+                        <a href="">
+                            <li>Quem Somos</li>
+                        </a>
+                        <a href="">
+                            <li>Fale conosco</li>
+                        </a>
+                        <a class="btn-primary" href="./simulacao.html">
+                            <li>Simulador</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main-content-responsive-pages">
+        <div class="header-title">
+            <div class="title-underline-blue-800">
+                <h2>Canal de Denúncias</h2>
+            </div>
+        </div>
+    </main>
+    <section class="px-2 md:px-24 flex flex-col gap-10 mb-20">
+        <div>
+            <span class="text-base text-gray-600">A PINCRED disponibiliza este canal de comunicação por meio do qual podem ser reportadas, situações com indícios de ilicitude de qualquer natureza, relacionadas às atividades da instituição. A manifestação pode ser feita através do canal abaixo.</span>
+        </div>
+        <div class="form-flex-responsive">
+
+            <form action="" class="flex flex-col lg:flex-row w-full gap-1 items-start">
+                <div class="forms-proposta-active">
+                    <h4 class="text-gray-600 text-base">Por favor, nos informe seus dados e tipo de denúncia:</h4>
+                    <div class="grid grid-cols-2 gap-[30px]">
+                        <div class="input-proposta">
+                            <label for="motivo">IDENTIFICAÇÃO*</label>
+                            <div class="flex gap-2">
+                                <label class="flex w-full gap-2" for="anonima">
+                                    <input class="scale-150" type="radio" name="tipoidentificacao" value="anonima" id="anonima">
+                                    Anônima
+                                </label>
+                                <label class="flex w-full gap-2" for="identificada">
+                                    <input class="scale-150" type="radio" name="tipoidentificacao" value="identificada " id="identificada">
+                                    Identificada
+                                </label>
+                            </div>
+                            <span>Campo obrigatório*</span>
+                        </div>
+                        <div class="input-proposta">
+                            <label for="motivo">MOTIVO DA DENUNCIA</label>
+                            <select name="motivo" id="motivo">
+                                <option value="teste1">Teste</option>
+                                <option value="reclamacoes">reclamações e elogios</option>
+                            </select>
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                        <div class="input-proposta">
+                            <label for="nomecompleto">NOME COMPLETO</label>
+                            <input type="text" id="nomecompleto" placeholder="Nome Completo">
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                        <div class="input-proposta">
+                            <label for="email">EMAIL</label>
+                            <input type="text" id="email" placeholder="usuario@exemplo.com.br">
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                        <div class="input-proposta">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" placeholder="000.000.000-00">
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                        <div class="input-proposta">
+                            <label for="telefone">TELEFONE</label>
+                            <input type="text" id="telefone" placeholder="(99) 9 9999-9999 ">
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                        <div class="input-proposta col-span-2">
+                            <label for="detalhesDenuncia">DETALHES DA DENUNCIA</label>
+                            <textarea name="detalhesDenuncia" id="detalhesDenuncia" placeholder="Digite sua mensagem..." maxlength="200"></textarea>
+                            <span>Campo obrigatório*</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn-form-proposta-active">CONTINUAR</button>
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="col-footer">
+                <div class="col-footer-title">
+                    <img class="mr-1" src="../images/ico-map-tree.svg" alt="">
+                    <h6>MAPA DO SITE</h6>
+                </div>
+                <ul class="col-footer-list">
+                    <li class=""><a href="">Home</a></li>
+                    <li class=""><a href="">Produtos</a></li>
+                    <li class=""><a href="">Informações</a></li>
+                    <li class=""><a href="">Quem Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="col-footer">
+                <div class="col-footer-title">
+                    <img class="mr-1" src="../images/ico-bull-horn.svg" alt="">
+                    <h6>ATENDIMENTO</h6>
+                </div>
+                <ul class="col-footer-list">
+                    <li class="">atendimento@pincred.com.br</li>
+                    <li class="">SAC: (86) 2107.4004</li>
+                    <li class="">Ouvidoria: 0800.0861486</li>
+                    <li class="">
+                        <a class="col-footer-list-links-icons" href="">
+                            <span class="">Canal de Denúncias</span>
+                            <img class="mr-1" src="../images/ico-open-external.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-footer">
+                <div class="col-footer-title">
+                    <img class="mr-1" src="../images/ico-book-mark.svg" alt="">
+                    <h6>JURÍDICO</h6>
+                </div>
+                <ul class="col-footer-list">
+                    <li class="">
+                        <a class="col-footer-list-links-icons" href="">
+                            <span class="">Termo de Uso</span>
+                            <img class="mr-1" src="../images/ico-open-external.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="col-footer-list-links-icons" href="">
+                            <span class="">Política de Privacidade</span>
+                            <img class="mr-1" src="../images/ico-open-external.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-contatos">
+            <div class="col-footer lg:items-end text-center lg:text-right">
+                <div class="footer-contatos-img-div">
+                    <img class="mr-1" src="../images/pincred-white.svg" alt="">
+                </div>
+                <ul class="col-footer-list">
+                    <li>PINTOS S. A. - Crédito Financiamento e Investimento</li>
+                    <li>Rua 13 de Maio, 154 - Centro - 64000-150 Teresina, PI</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./js/menu-dropdown.js"></script>
+</body>
+
+</html>

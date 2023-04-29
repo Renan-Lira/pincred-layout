@@ -8,7 +8,7 @@
     }
 
     .body-content {
-        @apply flex flex-col gap-5
+        @apply flex-col gap-5 hidden
     }   
     .body-content-maps {
         @apply flex flex-wrap gap-y-4 gap-x-5 ;

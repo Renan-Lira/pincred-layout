@@ -1,0 +1,6 @@
+@layer components {
+    .check-article-card:checked + .body-content {
+        @apply !flex;
+    }
+    
+}

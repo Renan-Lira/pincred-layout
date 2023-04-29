@@ -3,4 +3,12 @@
     .form-flex-responsive {
         @apply flex flex-col w-full gap-5 lg:w-4/5;
     }
+    .scrollbar::-webkit-scrollbar {
+        @apply w-2
+    }
+    .scrollbar::-webkit-scrollbar-thumb{
+       @apply bg-gray-800 rounded-full mx-4
+    }
+    
+    
 }

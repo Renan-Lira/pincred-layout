@@ -60,7 +60,7 @@
         @apply flex flex-col gap-5 xs:w-[80%] max-w-[500px] min-h-fit bg-white rounded-xl px-5 py-6;
     }
     .card-maps-correspondentes {
-        @apply flex flex-col lg:flex-row bg-blue-100 p-2 lg:w-[560px]; 
+        @apply flex flex-col lg:flex-row bg-blue-100 p-2 ; 
     }
     .card-maps-correspondentes iframe {
         @apply w-full h-[120px] lg:w-[120px];

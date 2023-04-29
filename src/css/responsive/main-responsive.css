@@ -52,6 +52,8 @@
         @apply flex flex-col gap-6
     }
     
-
+    .content-padding {
+        @apply px-2 md:px-24
+    }
 
 }

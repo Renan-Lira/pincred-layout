@@ -8,13 +8,12 @@
     }
 
     .sub-menu-produtos {
-        display: none;
-        @apply absolute origin-top-left left-0 top-6 rounded-md shadow-md p-5 z-10 bg-white focus:outline-none;
+        @apply hidden absolute origin-top-left left-0 top-4 rounded-md shadow-md p-5 z-10 bg-white focus:outline-none;
     }
     
     /* para funções javascript */
     .menu-visible {
-        display: block !important;
+        display: flex !important;
     }
 
     .nav-selected-item {

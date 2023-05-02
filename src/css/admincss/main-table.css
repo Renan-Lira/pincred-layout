@@ -1,0 +1,8 @@
+@layer components {
+    table svg {
+        @apply w-6
+    }
+    .actions-table-div {
+        @apply flex justify-evenly
+    }
+}

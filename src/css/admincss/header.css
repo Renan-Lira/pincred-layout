@@ -1,0 +1,5 @@
+@layer components {
+    .admin-header {
+        @apply flex pt-8 h-24 items-center bg-blue-200 w-full sticky top-0 left-0
+    }
+}

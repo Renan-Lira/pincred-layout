@@ -1,0 +1,20 @@
+@layer components {
+    .type-aside-menu {
+        @apply text-gray-300 font-bold mb-6;
+    }
+    .admin-menu-itens-list {
+        @apply flex flex-col gap-3 text-black;
+    }
+    .admin-menu-itens-list a {
+        @apply px-3 py-2 rounded-md text-white
+    }
+    .admin-menu-itens-list a li {
+        @apply flex items-center justify-between
+    }
+    .admin-nav-selected-item {
+        @apply bg-blue-900 text-white;
+    }
+    .button-sair-admin {
+        @apply bg-gray-600 !text-blue-200 fill-blue-200
+    }
+}

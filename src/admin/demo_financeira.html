@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="../css/dist/output.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css"/>
+
+</head>
+
+<body class="bg-gray-100 flex flex-col h-full">
+    
+
+    <div class="flex w-full h-full">
+        <aside class="md:grid grid-rows-[120px_calc(100vh_-_120px)] min-h-screen bg-blue-200 px-5 hidden">
+            <div class="flex items-center pt-8">
+                <img src="../../images/logo-pincred-white.svg" alt="">
+            </div>
+            <nav class="flex flex-col gap-10 ">
+                <div>
+                    <h4 class="type-aside-menu">ITENS CADASTRADOS</h4>
+                    <ul class="admin-menu-itens-list scrollbar overflow-menu-list">
+                        <a href="" class="">
+                            <li>CORRESPONDENTES</li>
+                        </a>
+                        <a href="" class="admin-nav-selected-item">
+                            <li>DEMOSTRAÇÕES FINANCEIRAS</li>
+                        </a>
+                        <a href="">
+                            <li>EDUCAÇÃO FINANCEIRA</li>
+                        </a>
+                        <a href="">
+                            <li>POLÍTICA PRS</li>
+                        </a>
+                        <a href="">
+                            <li>TABELA DE RISCOS</li>
+                        </a>
+                        <a href="">
+                            <li>TABELA DE TARIFAS</li>
+                        </a>
+                        <a href="">
+                            <li>SISTEMA SCR</li>
+                        </a>
+                        
+                    </ul>
+                </div>
+                
+                <div class="">
+                    <h4 class="type-aside-menu">AUTENTICAÇÃO</h4>
+                    <ul class="admin-menu-itens-list">
+                        <a href="#" class="button-sair-admin">
+                            <li>Sair <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M112,216a8,8,0,0,1-8,8H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h56a8,8,0,0,1,0,16H48V208h56A8,8,0,0,1,112,216Zm109.66-93.66-40-40a8,8,0,0,0-11.32,11.32L196.69,120H104a8,8,0,0,0,0,16h92.69l-26.35,26.34a8,8,0,0,0,11.32,11.32l40-40A8,8,0,0,0,221.66,122.34Z"></path></svg></li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <div class="w-full grid grid-rows-[120px_calc(100vh_-_120px)]">
+            <header class="admin-header">
+                <div class="mb-3 w-[300px]">
+                    <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+                        <input type="search" class="input-search" placeholder="Pesquisar" aria-label="Pesquisar"/>
+                    
+                        <!--Search icon-->
+                        <span
+                            class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                            id="basic-addon2">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="h-5 w-5">
+                            <path
+                                fill-rule="evenodd"
+                                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <main class="md:px-16 md:pt-16 bg-gray-100">
+                <div class="admin-page-title">
+                    <h2 class="md:text-4xl text-2xl font-semibold">Correspondentes</h2>
+                    <div>
+                        <a href="./create/correspondentes.html">
+                            Adicionar Item
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#131111" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.13,104.13,0,0,0,128,24Zm40,112H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32a8,8,0,0,1,0,16Z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="admin-content">
+                    <table class="">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Arquivo</th>
+                                <th>Data</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody class="">
+                            <tr>
+                                <td>Demonstrações Financeiras</td>
+                                <td>Demonstrações Financeiras - Dezembro_2019.pdf</td>
+                                <td>Dezembro de 2019</td>
+                                <td>
+                                    <div class="actions-table-div">
+                                        <a href="" class="edit-svg-button">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z"></path></svg>
+
+                                        </a>
+                                        <a href="" class="delete-svg-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg>
+                                        </a>
+                                        <a href="" class="view-svg-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"></path></svg>
+                                        </a>
+                                    </div>  
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Demonstrações Financeiras</td>
+                                <td>Demonstrações Financeiras - Dezembro_2019.pdf</td>
+                                <td>Dezembro de 2019</td>
+                                <td>
+                                    <div class="actions-table-div">
+                                        <a href="" class="edit-svg-button">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z"></path></svg>
+
+                                        </a>
+                                        <a href="" class="delete-svg-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg>
+                                        </a>
+                                        <a href="" class="view-svg-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"></path></svg>
+                                        </a>
+                                    </div>  
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Demonstrações Financeiras</td>
+                                <td>Demonstrações Financeiras - Dezembro_2019.pdf</td>
+                                <td>Dezembro de 2019</td>
+                                <td>
+                                    <div class="actions-table-div">
+                                        <a href="" class="edit-svg-button">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z"></path></svg>
+
+                                        </a>
+                                        <a href="" class="delete-svg-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg>
+                                        </a>
+                                        <a href="" class="view-svg-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"></path></svg>
+                                        </a>
+                                    </div>  
+                                </td>
+                            </tr>
+        
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/menu-dropdown.js"></script>
+</body>
+
+</html>

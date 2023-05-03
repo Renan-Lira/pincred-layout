@@ -1,8 +1,33 @@
 @layer components {
-    table svg {
+    .admin-content {
+        @apply overflow-y-scroll
+    }
+    .admin-content table {
+        @apply table-auto w-full text-center mt-8 border-separate border-spacing-y-5 text-xs;
+    }
+    .admin-content table svg {
         @apply w-6
     }
+    .admin-content table .edit-svg-button {
+        @apply fill-[#2ddfff]
+    }
+    .admin-content table .delete-svg-button {
+        @apply fill-[#cf2c2c]
+    }
+    .admin-content table .view-svg-button {
+        @apply fill-[#ffc342]
+    }
+    .admin-content table th {
+        @apply border border-gray-300;
+    }
+    .admin-content table tbody tr {
+        @apply odd:bg-gray-300
+    }
+    /* .admin-content table td {
+        @apply border border-gray-300;
+    } */
     .actions-table-div {
         @apply flex justify-evenly
     }
+
 }

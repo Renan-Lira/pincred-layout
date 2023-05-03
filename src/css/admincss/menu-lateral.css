@@ -5,6 +5,9 @@
     .admin-menu-itens-list {
         @apply flex flex-col gap-3 text-black;
     }
+    .overflow-menu-list {
+        @apply overflow-y-scroll h-[80%] max-h-[600px];
+    }
     .admin-menu-itens-list a {
         @apply px-3 py-2 rounded-md text-white
     }

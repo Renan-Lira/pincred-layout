@@ -3,7 +3,7 @@
         @apply overflow-y-scroll
     }
     .admin-content table {
-        @apply table-auto w-full text-center mt-8 border-separate border-spacing-y-5 text-xs;
+        @apply table-auto w-full text-center mt-8 border-separate border-spacing-y-5 text-xs md:text-base;
     }
     .admin-content table svg {
         @apply w-6

@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'admin-menu-screen': '904px',
         'xs': '500px'
       }
     },

@@ -15,27 +15,30 @@
     <link rel="stylesheet" href="../css/dist/output.css">
 
     <!-- icons -->
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"/>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css" />
 
 </head>
 
 <body class="bg-gray-100 flex flex-col h-full">
-    
 
-    <div class="flex w-full h-full">
-        <aside class="md:grid grid-rows-[120px_calc(100vh_-_120px)] min-h-screen bg-blue-200 px-5 hidden">
-            <div class="flex items-center pt-8">
+
+    <div class="flex w-screen h-full">
+        <aside id="admin-menu-target" class="aside">
+            <div class="flex items-center pt-8 justify-between">
                 <img src="../../images/logo-pincred-white.svg" alt="">
+                <div id="admin-close-menu" class="close-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm37.66,130.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+                </div>
             </div>
             <nav class="flex flex-col gap-10 ">
                 <div>
                     <h4 class="type-aside-menu">ITENS CADASTRADOS</h4>
                     <ul class="admin-menu-itens-list scrollbar overflow-menu-list">
-                        <a href="./index.html" class="">
+                        <a href="" class="admin-nav-selected-item">
                             <li>CORRESPONDENTES</li>
                         </a>
-                        <a href="" class="admin-nav-selected-item">
+                        <a href="./demo_financeira.html">
                             <li>DEMOSTRAÇÕES FINANCEIRAS</li>
                         </a>
                         <a href="">
@@ -53,57 +56,70 @@
                         <a href="">
                             <li>SISTEMA SCR</li>
                         </a>
-                        
+
                     </ul>
                 </div>
-                
+
                 <div class="">
                     <h4 class="type-aside-menu">AUTENTICAÇÃO</h4>
                     <ul class="admin-menu-itens-list">
                         <a href="#" class="button-sair-admin">
-                            <li>Sair <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M112,216a8,8,0,0,1-8,8H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h56a8,8,0,0,1,0,16H48V208h56A8,8,0,0,1,112,216Zm109.66-93.66-40-40a8,8,0,0,0-11.32,11.32L196.69,120H104a8,8,0,0,0,0,16h92.69l-26.35,26.34a8,8,0,0,0,11.32,11.32l40-40A8,8,0,0,0,221.66,122.34Z"></path></svg></li>
+                            <li>Sair <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M112,216a8,8,0,0,1-8,8H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h56a8,8,0,0,1,0,16H48V208h56A8,8,0,0,1,112,216Zm109.66-93.66-40-40a8,8,0,0,0-11.32,11.32L196.69,120H104a8,8,0,0,0,0,16h92.69l-26.35,26.34a8,8,0,0,0,11.32,11.32l40-40A8,8,0,0,0,221.66,122.34Z">
+                                    </path>
+                                </svg></li>
                         </a>
                     </ul>
                 </div>
             </nav>
         </aside>
-        <div class="w-full grid grid-rows-[120px_calc(100vh_-_120px)]">
+        <div class="flex-1 w-full grid grid-rows-[120px_calc(100vh_-_120px)]">
             <header class="admin-header">
-                <div class="w-[400px]">
-                    <div class="relative flex w-full flex-wrap items-stretch">
-                        <input type="search" class="input-search" placeholder="Pesquisar" aria-label="Pesquisar"/>
-                    
-                        <!--Search icon-->
-                        <span
-                            class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
-                            id="basic-addon2">
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            class="h-5 w-5">
-                            <path
-                                fill-rule="evenodd"
-                                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                                clip-rule="evenodd" />
-                            </svg>
-                        </span>
+                <div class="admin-buttons-menu">
+
+                    <div class="hidden max-admin-menu-screen:flex">
+                        <svg id="admin-button-menu" class="w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M156,128a28,28,0,1,1-28-28A28,28,0,0,1,156,128ZM128,76a28,28,0,1,0-28-28A28,28,0,0,0,128,76Zm0,104a28,28,0,1,0,28,28A28,28,0,0,0,128,180Z"></path></svg>
                     </div>
 
+                    <div class="search-div">
+                        <div class="relative flex w-full flex-wrap items-stretch">
+                            <input type="search" class="input-search" placeholder="Pesquisar" aria-label="Pesquisar" />
+    
+                            <!--Search icon-->
+                            <span
+                                class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                                id="basic-addon2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="h-5 w-5">
+                                    <path fill-rule="evenodd"
+                                        d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="flex items-center gap-2">
                     <span>03 de Maio</span>
                     <span>|</span>
                     <p>Olá, Admin</p>
                 </div>
             </header>
-            <main class="md:px-16 md:pt-16 bg-gray-100">
+            <main class="admin-main-content">
                 <div class="admin-page-title">
-                    <h2 class="md:text-4xl text-2xl font-semibold">Correspondentes</h2>
+                    <h2 class="">Correspondentes</h2>
                     <div>
-                        <a href="./create/demo_financeira.html">
-                            Adicionar Item
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#131111" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.13,104.13,0,0,0,128,24Zm40,112H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32a8,8,0,0,1,0,16Z"></path></svg>
+                        <a href="./create/correspondentes.html">
+                            Adicionar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#131111"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.13,104.13,0,0,0,128,24Zm40,112H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32a8,8,0,0,1,0,16Z">
+                                </path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -188,7 +204,11 @@
         </div>
     </div>
 
-    <script src="../js/menu-dropdown.js"></script>
+    <script src="../js/admin-menu.js"></script>
 </body>
 
 </html>
+
+
+
+                    

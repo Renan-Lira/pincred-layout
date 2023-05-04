@@ -1,9 +1,12 @@
 @layer components {
+    .admin-main-content {
+        @apply w-full md:px-6 bg-gray-100;
+    }
     .admin-content {
-        @apply overflow-y-scroll
+        @apply max-md:w-screen max-md:overflow-x-scroll mt-8
     }
     .admin-content table {
-        @apply table-auto w-full text-center mt-8 border-separate border-spacing-y-5 text-xs md:text-base;
+        @apply table-auto min-w-[600px] w-full text-center border-separate border-spacing-y-5 text-xs md:text-base;
     }
     .admin-content table svg {
         @apply w-6
@@ -27,7 +30,7 @@
         @apply border border-gray-300;
     } */
     .actions-table-div {
-        @apply flex justify-evenly
+        @apply flex justify-evenly gap-2
     }
 
 }

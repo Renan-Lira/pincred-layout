@@ -1,12 +1,16 @@
 {
   "author": {
-    "name": "Renan Almeida", 
+    "name": "Renan Almeida",
     "email": "renan.almeida@lojaspintos.com.br"
   },
   "contributors": [
-    {"name": "Caio Feitosa"}
+    {
+      "name": "Caio Feitosa"
+    }
   ],
-  "repository": {"url": "https://github.com/Renan-Lira/pincred-layout"},
+  "repository": {
+    "url": "https://github.com/Renan-Lira/pincred-layout"
+  },
   "version": "1.0.0",
   "scripts": {
     "compile": "npx tailwindcss -i ./src/input.css -o ./src/css/dist/output.css",
@@ -17,6 +21,7 @@
     "tailwindcss": "^3.3.1"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "flowbite": "^1.6.5"
   }
 }

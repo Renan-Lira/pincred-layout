@@ -10,10 +10,10 @@
         @apply w-8 fill-gray-550 cursor-pointer hidden max-admin-menu-screen:flex
     }
     .type-aside-menu {
-        @apply text-gray-300 font-bold mb-6;
+        @apply text-gray-300 font-bold mb-2;
     }
     .admin-menu-itens-list {
-        @apply flex flex-col gap-3 text-black;
+        @apply flex flex-col text-black gap-2;
     }
     .overflow-menu-list {
         @apply overflow-y-scroll h-[80%] max-h-[600px];

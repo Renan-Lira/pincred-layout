@@ -20,7 +20,9 @@
     .admin-header .input-search {
         @apply relative m-0 block w-[1px] min-w-0 flex-auto rounded-lg bg-blue-800 bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-white outline-none transition duration-200 ease-in-out focus:z-[3] focus:text-white focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none;
     }
-
+    .status-admin-account {
+        @apply flex whitespace-nowrap gap-3 items-center
+    }
     .search-div {
         @apply w-2/3 max-w-[400px]
     }
